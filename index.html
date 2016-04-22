@@ -12,11 +12,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <!-- Enable $ $ math delimiters -->
+    <!-- Enable $ $ math delimiters for MathJax -->
     <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-              tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-            });
+            MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
     </script>
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
   </head>
@@ -31,11 +29,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       <nav id="nav">
         <ul>
           <li><a href="#one" class="active">This site</a></li>
-          <li><a href="#two">Machine Learning</a></li>
-          <li><a href="#three">Mathematics</a></li>
-          <li><a href="#four">Software</a></li>
-          <li><a href="#five">People</a></li>
-          <li><a href="#six">About &amp; Contact</a></li>
+          <li><a href="#ml">Machine Learning</a></li>
+          <li><a href="#math">Mathematics</a></li>
+          <li><a href="#texmacs">TeXmacs</a></li>
+          <li><a href="#misc">Miscellanea</a></li>
+          <li><a href="#people">People</a></li>
+          <li><a href="#about">About &amp; Contact</a></li>
         </ul>
       </nav>
       <footer>
@@ -45,7 +44,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
           <li><a href="https://bitbucket.org/mdbenito/" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
           <li><a href="https://github.org/mdbenito/" class="icon fa-github"><span class="label">Github</span></a></li>
-          <li><a href="mailto:mdbenito (gmail)" class="icon fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="#about" class="icon fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="https://plus.google.com/u/0/+MigueldeBenitoDelgado" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+          <li><a href="https://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/debenito/" class="icon fa-university"><span class="label">University webpage</span></a></li>
         </ul>
       </footer>
     </section>
@@ -65,29 +66,17 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 Subtitle
               </p>
             </header>
-            <p>
-              This is some of the stuff you'll find here.
-            </p>
-            <ul class="feature-icons">
-              <li class="fa-code">Write all the code</li>
-              <li class="fa-cubes">Stack small boxes</li>
-              <li class="fa-book">Read books and stuff</li>
-              <li class="fa-coffee">Drink much coffee</li>
-              <li class="fa-bolt">Lightning bolt</li>
-              <li class="fa-users">Shadow clone technique</li>
-            </ul>
-
           </div>
         </section>
 
         <!-- Two -->
-        <section id="two">
+        <section id="ml">
           <div class="container">
             <header>
-              <h3>Machine learning</h3>
-              <p>Projects and documents in statistics and machine learning.</p>
+              <h3>Statistics and machine learning</h3>
+              <p>From the let-the-machine-tell-me dept.</p>
             </header>
-            <p>Blah blah...</p>
+            <p>These are some of my toy projects and accompanying documents in statistics and machine learning. The selection of topics is rather arbitrary, as is the depth with which they are covered. Even though I'm far from being an expert, I generally attempt to keep some moderate level of rigour. Often I remain at the level of a (somewhat) mathematically sofisticated practitioner.</p>
             <div class="features">
               <article>
                 <img src="images/ml/knn.svg" alt="" class="image" />
@@ -95,73 +84,116 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <h4>K - nearest neighbours</h4>
                   <p><strong>KNN</strong> is one of the simplest non-parametric classification algorithms. Here, starting from basic ideas in <strong>kernel density estimation</strong> and Bayes' rule a simple (albeit slow and sloppy) algorithm is derived which "only" requires the computation and sorting of distances in $L^p$.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/knn"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="ml/knn.pdf"><span class="label">Doc</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/kmeans.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>K-means</h4>
                   <p><strong>K-means</strong> is a clustering algorithm whose goal is to match each data point to exactly one of $K$ clusters in a way such that the sum of the squares of the distances of each data point to the center of mass of its assigned cluster is minimal.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/kmeans"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="ml/kmeans.pdf"><span class="label">Doc</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/gms.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Gaussian Mixtures</h4>
                   <p>GMs are applied here to classification. One models the data as a convex combination of Gaussians. As an introduction to the algorithm, we apply <em>expectation maximization</em> to learn the model parameters.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="ml/gaussian-mixtures.pdf"><span class="label">Doc</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/em.svg" alt="" class="image"/>
                 <div class="inner">
                   <h4>Expectation maximization</h4>
                   <p><strong>EM</strong> is a generic iterative algorithm for the maximization of the log likelihood. Following (very closely) Bishop's book we discuss its general form, applied to Gaussian models with latent variables as motivation. Some limitations are discussed. Finally we also say a few words about the Kullback-Leibler divergence and other information theoretic ideas to be able to show why EM works.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="ml/expectation-maximization.pdf"><span class="label">Doc</span></a></li>
+                  <li><a class="icon fa-laptop" href="ml/expectation-maximization-beamer.pdf"><span class="label">Presentation</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/bml.png" alt="" class="image" />
                 <div class="inner">
                   <h4>Bayesian model selection</h4>
                   <p>In this note we introduce linear regression with basis functions in order to apply Bayesian model selection. The goal is to incorporate Occam's razor through Bayesian analysis in order to automatically pick the model optimally able to explain the data without overfitting. This is joint fun with Philipp Wacker.</p>
-                  <ul class="icons" style="float:right;">
-                    <li class="icon fa-code"><a href="https://bitbucket.org/mdbenito/modelselection"></a><span class="label">Code</span></li>
-                    <li class="icon fa-book"><a href=""></a><span class="label">Doc</span></li>
-                  </ul>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href=""><span class="label">Doc</span></a></li>
+                  <li><a class="icon fa-laptop" href="ml/bmm-beamer.pdf"><span class="label">Presentation</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/svm.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Support Vector Machines</h4>
                   <p>Here we learn about <strong>SVM</strong>s with an eye on image classification. Starting with some elementary ideas on how to tackle the task of assigning labels to images, we progress onto the classical <em>Perceptron</em>, then introduce <em>Optimal Margin Classifiers</em> and finally the primal version of the SVM. From there we do a short detour through dual Lagrange methods and introduce the standard dual formulation of the SVM and the construction of higher dimensional feature spaces with the kernel trick. Along the way we will discuss optimisation methods which will enable us to use SVMs on large data sets.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="ml/svm.pdf"><span class="label">Doc</span></a></li>
+                  <li><a class="icon fa-laptop" href="ml/svm-beamer.pdf"><span class="label">Presentation</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/hmm.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Hidden Markov Models</h4>
-                  <p>Here is a (pure, vectorized) Python implementation of an <strong>HMM</strong> with discrete emissions given either by probability tables or Poisson distributions. Parameter estimation is done using the <em>Baum-Welch</em> algorithm for HMMs, which actually is Expectation Maximization. In this application we experience how badly EM tends to get stuck in local optima. This code was written during a short stay at the chair of Computational Neuroscience in the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the Ludwig-Maximilians-Universit&auml;t M&uuml;nchen.</p>
+                  <p>A (pure, vectorized) Python implementation of an <strong>HMM</strong> with discrete emissions given either by probability tables or Poisson distributions. Parameter estimation is done using the <em>Baum-Welch</em> algorithm for HMMs, which actually is Expectation Maximization. In this application we experience how badly EM tends to get stuck in local optima. This code was written during a short stay at the chair of Computational Neuroscience in the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the Ludwig-Maximilians-Universit&auml;t M&uuml;nchen.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href=""><span class="label">Doc</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/mcts.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Monte Carlo Tree Search</h4>
                   <p>Monte Carlo Tree Search is a moderately recent (2006) algorithm for playing games by partially building their decision trees. The key is to use random simulations of the game for those choices which seem most fruitful according to a criterion balancing <em>exploration</em> of new venues and <em>exploitation</em> of good ones. An implementation in <class style="font-variant: small-caps">Python</class> for a simple game of <a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum TicTacToe</a> provides a nice testbed. This is joint fun with Ana Ca&ntilde;izares, based on work by Philipp Wacker.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/quantum-tictactoe"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="ml/mcts.pdf"><span class="label">Doc</span></a></li>
+                </ul>
               </article>
+
               <article>
                 <img src="images/ml/ars.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Adaptive Rejection Sampling</h4>
                   <p><strong>ARS</strong> is a general technique for sampling from a <a href="https://en.wikipedia.org/wiki/Logarithmically_concave_function">log-concave</a> distribution. A majorant of the target density is computed using tangents to its logarithm, then transformed back into a sum of exponentials from which it is easy to sample. After explaining the algorithm we provide basic theoretical justification for it. In a simple Python implementation we also test <a href="https://github.com/HIPS/autograd">autograd</a>, a package for <a href="https://en.wikipedia.org/wiki/Automatic_differentiation">Automatic Differentiation</a>. Work with &Aacute;lvaro Tejero.</p>
                 </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/sampling"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="ml/ars.pdf"><span class="label">Doc</span></a></li>
+                </ul>
               </article>
             </div>
           </div>
         </section>
 
         <!-- Three -->
-        <section id="three">
+        <section id="math">
           <div class="container">
             <header class="major">
               <h3>Mathematics</h3>
@@ -201,237 +233,64 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         </section>
 
         <!-- Four -->
-        <section id="four">
+        <section id="texmacs">
           <div class="container">
-            <header class="major">
-              <h2>Software</h2>
-              <p>Projects I have either contributed to or developed</p>
-            </header>
-
             <header>
-              <h3>TeXmacs</h3>
+              <h2>TeXmacs</h2>
               <p>A scientific editing platform</p>
             </header>
-            <p>TeXmacs is ...</p>
-            <h4>Projects, old and new</h4>
-            <p>
-            I'm interested (at least) in the following projects inside TeXmacs. Other than an obvious
-            show-off, this list is an attempt to place blame where it is due: many of
-            these items are partially or sub-optimally implemented due to lack of time.
-            Please contact me with any ideas or suggestions or if you want to help out.
-            For bug reports, please use <a href="https://savannah.gnu.org/projects/texmacs/">the bug tracker</a>.
-            </p><dl>
-            <p>
-              <dt>
-                QT port
-              </dt>
-              <dd>
-                <p>
-                  Based on <a href="team-massimiliano.en.html"><font color="brown">Massimiliano</font></a>'s work I've
-                  implemented some new standard widgets (color palettes, embedded
-                  TeXmacs buffers, filtered input widgets, tree views, &hellip;) and
-                  tweaked/fixed a few old ones. I've also heavily commented the code in
-                  the hope of fooling some poor soul into helping us.
-                </p>
-              </dd>
-            </p>
-            <p>
-              <dt>
-                TeXmacs as an <abbr>IDE</abbr> to itself
-              </dt>
-              <dd>
-                <p>
-                  (In particular for <class style="font-variant: small-caps">Scheme</class> code edition). To this
-                  purpose I've implemented basic tab completion, contextual help popups
-                  and easy code browsing (jump to definitions, symbol lists, module
-                  browsing), bracket matching for all languages, customizable syntax
-                  highlighting (this still needs an interface, 2014)&hellip; Proper
-                  parsing and indexing of all code is in the queue. The amount of room
-                  for improvement is overwhelming and the overall result not that
-                  impressive, I know.
-                </p>
-              </dd>
-            </p>
-            <p>
-              <dt>
-                Better bibliography management
-              </dt>
-              <dd>
-                <p>
-                  I've implemented autocompletion for bibliographic keys, a simple
-                  bibliography dialog and a few other related things. I'm also <a href="../miguel/task-zotero.en.html"><font
-                                                                                                                             color="brown">toying with the idea</font></a> of a <a href="https://www.zotero.org/"><class style="font-variant: small-caps">Zotero</class></a>
-                  client and embedding bibliographic data into documents (2014).
-                </p>
-              </dd>
-            </p>
-            <p>
-              <dt>
-                Automatic update mechanism
-              </dt>
-              <dd>
-                <p>
-                  I wrote the (as of late 2014 yet to be used) update notification
-                  system for <class style="font-variant: small-caps">MacOS</class> and <class style="font-variant: small-caps">Windows</class>
-                  using <a href="http://sparkle.andymatuschak.org/"><class style="font-variant: small-caps">Sparkle</class></a> and <a href="http://winsparkle.org/"><class
-        style="font-variant: small-caps">WinSparkle</class></a>. The <class style="font-variant: small-caps">Linux</class> port is
-                  in the queue (hopefully in 2014).
-                </p>
-              </dd>
-            </p>
-            <p>
-              <dt>
-                <a href="https://en.wikipedia.org/wiki/MetaWeblog"><class style="font-variant: small-caps">MetaWeblog</class></a> integration
-              </dt>
-              <dd>
-                <p>
-                  I played with this idea for a while some time ago (2013). <a href="../miguel/task-metaweblog.en.html"><font
-                                                                                                                              color="brown">Here's a document</font></a> with some thoughts. Mostly I need
-                  someone to want to help out with the definition of macros and styles,
-                  then I'll write the backend.
-                </p>
-              </dd>
-            </p>
-            <p>
-              <dt>
-                Documentation
-              </dt>
-              <dd>
-                <p>
-                  I've mainly written about many of the widgets available for user
-                  interface design, as well as a bit about the <abbr>URL</abbr> system,
-                  preferences management, the default persistent storage mechanism and
-                  perhaps a couple other minor things. I've also worked in tools for
-                  automated extraction of <a href="task-autodocs.en.html"><font color="brown">documentation for users
-                  and developers</font></a> (but dropped it because of&hellip; the lack
-                  of actual documentation to display (as of 2012)). <em>[More (and
-                  better) work has been done by Joris to extract and display macro
-                  documentation from the manual.]</em>
-                </p>
-              </dd>
-            </p>
-            <p>
-              <dt>
-                Printing interface
-              </dt>
-              <dd>
-                <p>
-                  An old (2010) implementation of a printing widget using <tt class="verbatim">lpr</tt>
-                  to work around some features of the fixed <abbr>OS</abbr> default
-                  dialogues. It's written in <class style="font-variant: small-caps">C++</class> in <tt class="verbatim">src/src/Plugins/QTMPrint*</tt>,
-                  and should be deprecated any time now (2014) in favour of a pure
-                  <class style="font-variant: small-caps">Scheme</class> implementation.
-                </p>
-              </dd>
-            </p>
-            <p>
-              <dt>
-                Bug fixing and minor tweaks
-              </dt>
-              <dd>
-                <p>
-                  (And cleaning <a href="https://savannah.gnu.org/projects/texmacs/">the tracker</a> of old junk.) Besides from
-                  fixing any bugs I can, I developed some tools for the translation of
-                  strings in the code. In particular one to gather all strings used in
-                  the <abbr>GUI</abbr> (see <class style="font-family: sans-serif">Developer</class><var>&rarr;</var><class
-                                                                                                                            style="font-family: sans-serif">Translations</class><a id="auto-2"></a>) and edit/reload them from
-                  within the editor. <em>[I think there's some overlap with similar
-                  functionality implemented by Andrey Grozin.]</em>
-                </p>
-              </dd>
-            </p>
-            </dl>
-            <p>I've sometimes documented the process of developing new features for TeXmacs using a TeXmacs document: a poor-man's literate programming of sorts. I've formatted some of these drafts into rough tutorials with the idea that they might help the newcomer. Here are a few of them:</p>
-            <p><class style="font-variant: small-caps">Note:</class> It is best to read the original TeXmacs files with interactive <class style="font-variant: small-caps">Scheme</class> sessions where one may experiment with the code. They can be found in the <a href="http://svn.savannah.gnu.org/viewvc/trunk/?root=texmacs">project's source code</a>, inside the directory <em>web/miguel</em>.</p>
-            <ul>
-              <li>
-                <p>
-                  <em><a href="tm/snippet-logo.en.html"><font color="brown">Turtle graphics</font></a> (Dec. 2013).
-                  </em>An implementation of a small <class style="font-variant: small-caps">Logo</class>-like set of
-                  macros to be used in <class style="font-variant: small-caps">Scheme</class> programs inside
-                  TeXmacs, featuring a canvas for output and nice examples, including some
-                  beatiful recursion! This was joint work/fun with <a href="http://www.mathematik.uni-muenchen.de/~caniz/">Ana
-                  Ca&ntilde;izares Garc&iacute;a</a> (more on this below).
-                </p>
-              </li>
-              <li>
-                <p>
-                  <em><a href="tm/snippet-evaluation.en.html"><font color="brown">Evaluating code snippets</font></a> (Jan.
-                    2014). </em>Evaluation of code inside <font color="blue"><class style="font-family: sans-serif">scm-code</class></font>
-                  tags using links in the text. This could be useful in printed
-                  documentation, where framed environments look better than embedded
-                  <class style="font-variant: small-caps">Scheme</class> sessions.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <em><a href="tm/snippet-subtree-extraction.en.html"><font color="brown">Subtree extraction</font></a> (Feb. 2014).
-                  </em>A very small tool to extract environments from a document into a
-                  new one, e.g. exercises or solutions.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <em><a href="tm/snippet-fractal-1.en.html"><font color="brown">Fractal turtles</font></a> (Mar. 2014). </em>A
-                  quick follow-up to the TeXmacs pseudo-<class style="font-variant: small-caps">Logo</class>
-                  including some beatiful recursion! This was joint work/fun with Ana
-                  Ca&ntilde;izares Garc&iacute;a.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <em><a href="tm/snippet-buffercycle.en.html"><font color="brown">Cycling through buffers</font></a> (Feb.
-                    2015). </em>An implementation walkthrough of a little feature to cycle
-                  through buffers with a shortcut. This was joint work/fun with <a href="http://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/bianchi/">Luigi
-                  Amedeo Bianchi</a>.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <em><a href="tm/snippet-beamer2pdf.en.html"><font color="brown">Exporting beamer presentations</font></a>
-                    (Mar. 2015). </em>An implementation walkthrough of better PDF export of
-                  beamer presentations. This was joint work/fun with Ana Ca&ntilde;izares
-                  Garc&iacute;a.
-                </p>
-              </li>
-            </ul>
-            <div class="features">
-              <article>
-                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                <div class="inner">
-                  <h4>One</h4>
-                  <p>One</p>
-                </div>
-              </article>
-            </div>
-            <hr/>
-            <header>
-              <h3>PzzApp</h3>
-              <p>A simple 15-puzzle game written in cocoa.</p>
-            </header>
-            <p>
-              Blah...
-            </p>
-            <hr />
-            <header>
-            <h3>SuperPong</h3>
-              <p>Superpong is a clone of the 1972 classic Pong written in clojure</p>
-            </header>
-            <p>
-              The sole reason of existence of this project is having fun and learning while coding it.
-              We use the Entity-Component-System framework, closely following Chris Granger's blog post
-              <a href="http://www.chris-granger.com/2012/12/11/anatomy-of-a-knockout">Anatomy of a Knockout</a>.
-            </p>
+
+            <p><img class="image right" src="images/tm/TeXmacs.svg" width="100px" alt="TeXmacs icon" />TeXmacs is an open source fully fledged scientific editor, mostly developed by Joris van der Hoeven with the help of <a href="http://texmacs.org/tmweb/contribute/team.en.html">a few developers</a> and <a href="http://texmacs.org/tmweb/about/authors.en.html">a miriad contributors</a>. Despite its name it isn't either a plugin for emacs nor a frontend to LaTeX. It defines a document format, features a macro language for extensions and provides typesetting-god-powers through scheme.</p>
+            <p>I'm interested in several subprojects inside TeXmacs, including the Qt port, using TeXmacs as an IDE for itself, bibliography management, automatic updates, documentation, the printing interface, bug fixing and almost anything else. There should be a partial list at <a href="http://texmacs.org/tmweb/contribute/team-miguel.en.html">my page at www.texmacs.org</a>.</p>
+            <p>I've sometimes documented the process of developing new features for TeXmacs using a TeXmacs document: a poor-man's literate programming of sorts. I've formatted some of these drafts into rough tutorials with the idea that they might help the newcomer.
           </div>
         </section>
 
         <!-- Five -->
-        <section id="five">
+        <section id="misc">
+          <div class="container">
+            <header>
+              <h2>Miscellanea</h2>
+            </header>
+            <div class="features">
+              <article>
+                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                <div class="inner">
+                  <h4>PzzApp</h4>
+                  <p>A simple 15-puzzle game written in Cocoa.</p>
+                  <p>This was our first and only application in Cocoa. Don't expect wonders.</p>
+                </div>
+              </article>
+              <article>
+                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                <div class="inner">
+                  <h4>SuperPong</h4>
+                  <p>A clone of the 1972 classic Pong written in <a href="https://clojure.org/">clojure</a>.</p>
+                  <p>The only reason of existence of this project is to have fun and learn while coding it.
+                    We use a naive implementation of the <a href="https://en.wikipedia.org/wiki/Entity_component_system">Entity-Component-System framework</a>, closely following Chris Granger's blog post
+                    <a href="http://www.chris-granger.com/2012/12/11/anatomy-of-a-knockout">Anatomy of a Knockout</a>.</p>
+                </div>
+              </article>
+              <article>
+                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                <div class="inner">
+                  <h4>Solver for the Signorini problem</h4>
+                  <p>A C++ FEM implementation of the problem of elastic contact between two bodies.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Six -->
+        <section id="people">
           <div class="container">
             <header>
               <h3>People</h3>
-              <p>Much of the work present here owes a lot to many people. Here's a few of them</p>
             </header>
+            <p>
+              It is trite but true: I owe so much to so many people that it would be silly to list them all. Here's a list of those with whom I have worked most closely.
+            </p>
             <ul class="feature-icons">
               <li class="fa-male">Luigi Amedeo Bianchi</li>
               <li class="fa-male">Ana Cañizares García</li>
@@ -444,17 +303,17 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           </div>
         </section>
 
-        <!-- Six -->
-        <section id="six">
+        <!-- Seven -->
+        <section id="about">
           <div class="container">
             <header>
               <h3>About myself</h3>
-              <p>Who and what</p>
+              <p>From the self-plug dept.</p>
             </header>
             <p>
-              <span class="image right"><span class="image avatar"><img src="images/avatar.jpg" alt="Myself"/></span></span>
+              <span class="image right"><img class="image avatar" src="images/avatar.jpg" alt="Myself"/></span>
               I'm a Ph.D. student in mathematics currently working on effective two dimensional theories for thin multi-layered materials and their minimizers.<br/> In the past I've worked with contact problems in linear elasticity, in particular I investigated some properties of the coincidence set for the classical Signorini problem and studied the mathematical properties of the two body problem together with some numerical computations, using the open source toolbox DUNE.<br />
-              I devote some of my free time to teaching myself a few methods in machine learning. If you are interested or have any ideas for a talk or project, <a href="#six">drop me a line</a>.<br/>
+              I devote some of my free time to teaching myself a few methods in <a href="#ml">machine learning</a>. If you are interested or have any ideas for a talk or project, <a href="#six">drop me a line</a>.<br/>
               From 2010 to 2014 I contributed to the open source project TeXmacs, a scientific editing platform written mainly in C++ and Scheme. You can visit my page at the project's site or send me an email to mdbenito AT texmacs DOT org if you have some project you need help with. As of 2016 my involvement with TeXmacs has declined, although I still use it for daily work.
             </p>
             <h4>Contact</h4>
@@ -481,351 +340,351 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           </div>
         </section>
 
-        <!-- Seven -->
-<!--
-        <section id="seven">
-          <div class="container">
-            <h3>Elements</h3>
+        <!-- Eight -->
+        <!--
+<section id="eight">
+<div class="container">
+<h3>Elements</h3>
 
-            <section>
-              <h4>Text</h4>
-              <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-                This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-                This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-              <hr />
-              <header>
-                <h4>Heading with a Subtitle</h4>
-                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-              </header>
-              <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-              <header>
-                <h5>Heading with a Subtitle</h5>
-                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-              </header>
-              <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-              <hr />
-              <h2>Heading Level 2</h2>
-              <h3>Heading Level 3</h3>
-              <h4>Heading Level 4</h4>
-              <h5>Heading Level 5</h5>
-              <h6>Heading Level 6</h6>
-              <hr />
-              <h5>Blockquote</h5>
-              <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-              <h5>Preformatted</h5>
-              <pre><code>i = 0;
+<section>
+<h4>Text</h4>
+<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+<hr />
+<header>
+<h4>Heading with a Subtitle</h4>
+<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+</header>
+<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+<header>
+<h5>Heading with a Subtitle</h5>
+<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+</header>
+<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+<hr />
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+<hr />
+<h5>Blockquote</h5>
+<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+<h5>Preformatted</h5>
+<pre><code>i = 0;
 
-	while (!deck.isInOrder()) {
-	    print 'Iteration ' + i;
-	    deck.shuffle();
-	    i++;
-	}
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
 
-	print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-            </section>
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+</section>
 
-            <section>
-              <h4>Lists</h4>
-              <div class="row">
-                <div class="6u 12u(xsmall)">
-                  <h5>Unordered</h5>
-                  <ul>
-                    <li>Dolor pulvinar etiam magna etiam.</li>
-                    <li>Sagittis adipiscing lorem eleifend.</li>
-                    <li>Felis enim feugiat dolore viverra.</li>
-                  </ul>
-                  <h5>Alternate</h5>
-                  <ul class="alt">
-                    <li>Dolor pulvinar etiam magna etiam.</li>
-                    <li>Sagittis adipiscing lorem eleifend.</li>
-                    <li>Felis enim feugiat dolore viverra.</li>
-                  </ul>
-                </div>
-                <div class="6u 12u(xsmall)">
-                  <h5>Ordered</h5>
-                  <ol>
-                    <li>Dolor pulvinar etiam magna etiam.</li>
-                    <li>Etiam vel felis at lorem sed viverra.</li>
-                    <li>Felis enim feugiat dolore viverra.</li>
-                    <li>Dolor pulvinar etiam magna etiam.</li>
-                    <li>Etiam vel felis at lorem sed viverra.</li>
-                    <li>Felis enim feugiat dolore viverra.</li>
-                  </ol>
-                  <h5>Icons</h5>
-                  <ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-                  </ul>
-                </div>
-              </div>
-              <h5>Actions</h5>
-              <ul class="actions">
-                <li><a href="#" class="button special">Default</a></li>
-                <li><a href="#" class="button">Default</a></li>
-                <li><a href="#" class="button alt">Default</a></li>
-              </ul>
-              <ul class="actions small">
-                <li><a href="#" class="button special small">Small</a></li>
-                <li><a href="#" class="button small">Small</a></li>
-                <li><a href="#" class="button alt small">Small</a></li>
-              </ul>
-              <div class="row">
-                <div class="3u 6u(medium) 12u$(xsmall)">
-                  <ul class="actions vertical">
-                    <li><a href="#" class="button special">Default</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                    <li><a href="#" class="button alt">Default</a></li>
-                  </ul>
-                </div>
-                <div class="3u 6u$(medium) 12u$(xsmall)">
-                  <ul class="actions vertical small">
-                    <li><a href="#" class="button special small">Small</a></li>
-                    <li><a href="#" class="button small">Small</a></li>
-                    <li><a href="#" class="button alt small">Small</a></li>
-                  </ul>
-                </div>
-                <div class="3u 6u(medium) 12u$(xsmall)">
-                  <ul class="actions vertical">
-                    <li><a href="#" class="button special fit">Default</a></li>
-                    <li><a href="#" class="button fit">Default</a></li>
-                    <li><a href="#" class="button alt fit">Default</a></li>
-                  </ul>
-                </div>
-                <div class="3u 6u$(medium) 12u$(xsmall)">
-                  <ul class="actions vertical small">
-                    <li><a href="#" class="button special small fit">Small</a></li>
-                    <li><a href="#" class="button small fit">Small</a></li>
-                    <li><a href="#" class="button alt small fit">Small</a></li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+<section>
+<h4>Lists</h4>
+<div class="row">
+<div class="6u 12u(xsmall)">
+<h5>Unordered</h5>
+<ul>
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Sagittis adipiscing lorem eleifend.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+</ul>
+<h5>Alternate</h5>
+<ul class="alt">
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Sagittis adipiscing lorem eleifend.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+</ul>
+</div>
+<div class="6u 12u(xsmall)">
+<h5>Ordered</h5>
+<ol>
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Etiam vel felis at lorem sed viverra.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Etiam vel felis at lorem sed viverra.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+</ol>
+<h5>Icons</h5>
+<ul class="icons">
+<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+</ul>
+</div>
+</div>
+<h5>Actions</h5>
+<ul class="actions">
+<li><a href="#" class="button special">Default</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt">Default</a></li>
+</ul>
+<ul class="actions small">
+<li><a href="#" class="button special small">Small</a></li>
+<li><a href="#" class="button small">Small</a></li>
+<li><a href="#" class="button alt small">Small</a></li>
+</ul>
+<div class="row">
+<div class="3u 6u(medium) 12u$(xsmall)">
+<ul class="actions vertical">
+<li><a href="#" class="button special">Default</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt">Default</a></li>
+</ul>
+</div>
+<div class="3u 6u$(medium) 12u$(xsmall)">
+<ul class="actions vertical small">
+<li><a href="#" class="button special small">Small</a></li>
+<li><a href="#" class="button small">Small</a></li>
+<li><a href="#" class="button alt small">Small</a></li>
+</ul>
+</div>
+<div class="3u 6u(medium) 12u$(xsmall)">
+<ul class="actions vertical">
+<li><a href="#" class="button special fit">Default</a></li>
+<li><a href="#" class="button fit">Default</a></li>
+<li><a href="#" class="button alt fit">Default</a></li>
+</ul>
+</div>
+<div class="3u 6u$(medium) 12u$(xsmall)">
+<ul class="actions vertical small">
+<li><a href="#" class="button special small fit">Small</a></li>
+<li><a href="#" class="button small fit">Small</a></li>
+<li><a href="#" class="button alt small fit">Small</a></li>
+</ul>
+</div>
+</div>
+</section>
 
-            <section>
-              <h4>Table</h4>
-              <h5>Default</h5>
-              <div class="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Description</th>
-                      <th>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Item One</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Two</td>
-                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Three</td>
-                      <td> Morbi faucibus arcu accumsan lorem.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Four</td>
-                      <td>Vitae integer tempus condimentum.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Five</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="2"></td>
-                      <td>100.00</td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
+<section>
+<h4>Table</h4>
+<h5>Default</h5>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item One</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Two</td>
+<td>Vis ac commodo adipiscing arcu aliquet.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Three</td>
+<td> Morbi faucibus arcu accumsan lorem.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Four</td>
+<td>Vitae integer tempus condimentum.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Five</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2"></td>
+<td>100.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
 
-              <h5>Alternate</h5>
-              <div class="table-wrapper">
-                <table class="alt">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Description</th>
-                      <th>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Item One</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Two</td>
-                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Three</td>
-                      <td> Morbi faucibus arcu accumsan lorem.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Four</td>
-                      <td>Vitae integer tempus condimentum.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Five</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="2"></td>
-                      <td>100.00</td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-            </section>
+<h5>Alternate</h5>
+<div class="table-wrapper">
+<table class="alt">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item One</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Two</td>
+<td>Vis ac commodo adipiscing arcu aliquet.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Three</td>
+<td> Morbi faucibus arcu accumsan lorem.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Four</td>
+<td>Vitae integer tempus condimentum.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Five</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2"></td>
+<td>100.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</section>
 
-            <section>
-              <h4>Buttons</h4>
-              <ul class="actions">
-                <li><a href="#" class="button special">Special</a></li>
-                <li><a href="#" class="button">Default</a></li>
-                <li><a href="#" class="button alt">Alternate</a></li>
-              </ul>
-              <ul class="actions">
-                <li><a href="#" class="button special big">Big</a></li>
-                <li><a href="#" class="button">Default</a></li>
-                <li><a href="#" class="button alt small">Small</a></li>
-              </ul>
-              <ul class="actions fit">
-                <li><a href="#" class="button special fit">Fit</a></li>
-                <li><a href="#" class="button fit">Fit</a></li>
-                <li><a href="#" class="button alt fit">Fit</a></li>
-              </ul>
-              <ul class="actions fit small">
-                <li><a href="#" class="button special fit small">Fit + Small</a></li>
-                <li><a href="#" class="button fit small">Fit + Small</a></li>
-                <li><a href="#" class="button alt fit small">Fit + Small</a></li>
-              </ul>
-              <ul class="actions">
-                <li><a href="#" class="button special icon fa-download">Icon</a></li>
-                <li><a href="#" class="button icon fa-download">Icon</a></li>
-                <li><a href="#" class="button alt icon fa-check">Icon</a></li>
-              </ul>
-              <ul class="actions">
-                <li><span class="button special disabled">Special</span></li>
-                <li><span class="button disabled">Default</span></li>
-                <li><span class="button alt disabled">Alternate</span></li>
-              </ul>
-            </section>
+<section>
+<h4>Buttons</h4>
+<ul class="actions">
+<li><a href="#" class="button special">Special</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt">Alternate</a></li>
+</ul>
+<ul class="actions">
+<li><a href="#" class="button special big">Big</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt small">Small</a></li>
+</ul>
+<ul class="actions fit">
+<li><a href="#" class="button special fit">Fit</a></li>
+<li><a href="#" class="button fit">Fit</a></li>
+<li><a href="#" class="button alt fit">Fit</a></li>
+</ul>
+<ul class="actions fit small">
+<li><a href="#" class="button special fit small">Fit + Small</a></li>
+<li><a href="#" class="button fit small">Fit + Small</a></li>
+<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+</ul>
+<ul class="actions">
+<li><a href="#" class="button special icon fa-download">Icon</a></li>
+<li><a href="#" class="button icon fa-download">Icon</a></li>
+<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+</ul>
+<ul class="actions">
+<li><span class="button special disabled">Special</span></li>
+<li><span class="button disabled">Default</span></li>
+<li><span class="button alt disabled">Alternate</span></li>
+</ul>
+</section>
 
-            <section>
-              <h4>Form</h4>
-              <form method="post" action="#">
-                <div class="row uniform">
-                  <div class="6u 12u(xsmall)">
-                    <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-                  </div>
-                  <div class="6u 12u(xsmall)">
-                    <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-                  </div>
-                </div>
-                <div class="row uniform">
-                  <div class="12u">
-                    <div class="select-wrapper">
-                      <select name="demo-category" id="demo-category">
-                        <option value="">- Category -</option>
-                        <option value="1">Manufacturing</option>
-                        <option value="1">Shipping</option>
-                        <option value="1">Administration</option>
-                        <option value="1">Human Resources</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="row uniform">
-                  <div class="4u 12u(medium)">
-                    <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                    <label for="demo-priority-low">Low Priority</label>
-                  </div>
-                  <div class="4u 12u(medium)">
-                    <input type="radio" id="demo-priority-normal" name="demo-priority">
-                    <label for="demo-priority-normal">Normal Priority</label>
-                  </div>
-                  <div class="4u 12u(medium)">
-                    <input type="radio" id="demo-priority-high" name="demo-priority">
-                    <label for="demo-priority-high">High Priority</label>
-                  </div>
-                </div>
-                <div class="row uniform">
-                  <div class="6u 12u(medium)">
-                    <input type="checkbox" id="demo-copy" name="demo-copy">
-                    <label for="demo-copy">Email me a copy of this message</label>
-                  </div>
-                  <div class="6u 12u(medium)">
-                    <input type="checkbox" id="demo-human" name="demo-human" checked>
-                    <label for="demo-human">I am a human and not a robot</label>
-                  </div>
-                </div>
-                <div class="row uniform">
-                  <div class="12u">
-                    <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-                  </div>
-                </div>
-                <div class="row uniform">
-                  <div class="12u">
-                    <ul class="actions">
-                      <li><input type="submit" value="Send Message" /></li>
-                      <li><input type="reset" value="Reset" class="alt" /></li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
-            </section>
+<section>
+<h4>Form</h4>
+<form method="post" action="#">
+<div class="row uniform">
+<div class="6u 12u(xsmall)">
+<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+</div>
+<div class="6u 12u(xsmall)">
+<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+</div>
+</div>
+<div class="row uniform">
+<div class="12u">
+<div class="select-wrapper">
+<select name="demo-category" id="demo-category">
+<option value="">- Category -</option>
+<option value="1">Manufacturing</option>
+<option value="1">Shipping</option>
+<option value="1">Administration</option>
+<option value="1">Human Resources</option>
+</select>
+</div>
+</div>
+</div>
+<div class="row uniform">
+<div class="4u 12u(medium)">
+<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+<label for="demo-priority-low">Low Priority</label>
+</div>
+<div class="4u 12u(medium)">
+<input type="radio" id="demo-priority-normal" name="demo-priority">
+<label for="demo-priority-normal">Normal Priority</label>
+</div>
+<div class="4u 12u(medium)">
+<input type="radio" id="demo-priority-high" name="demo-priority">
+<label for="demo-priority-high">High Priority</label>
+</div>
+</div>
+<div class="row uniform">
+<div class="6u 12u(medium)">
+<input type="checkbox" id="demo-copy" name="demo-copy">
+<label for="demo-copy">Email me a copy of this message</label>
+</div>
+<div class="6u 12u(medium)">
+<input type="checkbox" id="demo-human" name="demo-human" checked>
+<label for="demo-human">I am a human and not a robot</label>
+</div>
+</div>
+<div class="row uniform">
+<div class="12u">
+<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+</div>
+</div>
+<div class="row uniform">
+<div class="12u">
+<ul class="actions">
+<li><input type="submit" value="Send Message" /></li>
+<li><input type="reset" value="Reset" class="alt" /></li>
+</ul>
+</div>
+</div>
+</form>
+</section>
 
-            <section>
-              <h4>Image</h4>
-              <h5>Fit</h5>
-              <span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-              <div class="box alt">
-                <div class="row 50% uniform">
-                  <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                  <div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                  <div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                </div>
-                <div class="row 50% uniform">
-                  <div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                  <div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                  <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                </div>
-                <div class="row 50% uniform">
-                  <div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                  <div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                  <div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                </div>
-              </div>
-              <h5>Left &amp; Right</h5>
-              <p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-              <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-            </section>
+<section>
+<h4>Image</h4>
+<h5>Fit</h5>
+<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+<div class="box alt">
+<div class="row 50% uniform">
+<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+</div>
+<div class="row 50% uniform">
+<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+</div>
+<div class="row 50% uniform">
+<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+</div>
+</div>
+<h5>Left &amp; Right</h5>
+<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+</section>
 
-          </div>
-        </section>
+</div>
+</section>
 -->
       </div>
 
