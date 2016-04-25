@@ -106,7 +106,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <img src="images/ml/gms.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Gaussian Mixtures</h4>
-                  <p>GMs are applied here to classification. One models the data as a convex combination of Gaussians. As an introduction to the algorithm, we apply <em>expectation maximization</em> to learn the model parameters.</p>
+                  <p>We apply GMs to classification: one models the data as a convex combination of Gaussians: $$p (x) = \sum_{k = 1}^K \pi_k \mathcal{N} (x| \mu_k, S_k), \quad x \in \mathbb{R}^d,$$ then one introduces latent variables $Z$ assigning data points to classes and maximize the expected value of $\log p (\mathbf{x}, \mathbf{z}| \theta)$ under the posterior of $\mathbf{Z}|\mathbf{X}=\mathbf{x}$. We apply <em>expectation maximization</em> to learn the model parameters.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/"><span class="label">Code</span></a></li>
