@@ -1604,8 +1604,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 2.25em
+/* FIXME: why is this ignored? */
+#one > h1 {
+  font-size: 3em !important;
   line-height: 1.5em;
 }
 
@@ -2471,7 +2472,7 @@ input[type="button"]:disabled,
   position: fixed;
   text-align: center;
   top: 0;
-  width: 23em;
+  width: 17em;
   right: 0;
 }
 
@@ -2569,7 +2570,7 @@ input[type="button"]:disabled,
 
 #wrapper {
   background: #fff;
-  padding-right: 23em;
+  padding-right: 15em;
 }
 
 /* Main */
@@ -2647,7 +2648,7 @@ input[type="button"]:disabled,
   /* Header */
 
   #header {
-    width: 21em;
+    width: 18em;
   }
 
   #header > header {
@@ -2661,7 +2662,7 @@ input[type="button"]:disabled,
   /* Wrapper */
 
   #wrapper {
-    padding-right: 21em;
+    padding-right: 18em;
   }
 
   /* Main */
@@ -2685,13 +2686,13 @@ input[type="button"]:disabled,
   /* Header */
 
   #header {
-    width: 20em;
+    width: 16em;
   }
 
   /* Wrapper */
 
   #wrapper {
-    padding-right: 20em;
+    padding-right: 16em;
   }
 
 }
@@ -2935,7 +2936,7 @@ input[type="button"]:disabled,
   /* Header */
 
   #header {
-    width: 17em;
+    width: 15em;
     -moz-transform: translateX(17em);
     -webkit-transform: translateX(17em);
     -ms-transform: translateX(17em);
