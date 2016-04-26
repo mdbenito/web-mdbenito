@@ -2936,7 +2936,7 @@ input[type="button"]:disabled,
   /* Header */
 
   #header {
-    width: 15em;
+    width: 17em;
     -moz-transform: translateX(17em);
     -webkit-transform: translateX(17em);
     -ms-transform: translateX(17em);
