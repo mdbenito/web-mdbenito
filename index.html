@@ -72,7 +72,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <p>The selection of topics is rather arbitrary, as is the depth with which they are covered. I usually try to keep some moderate level of rigour, but I often I remain at the level of a (mildly) mathematically sofisticated practitioner.</p>
             <div class="features">
               <article>
-                <img src="images/ml/knn.png" alt="" class="image" />
+                <img src="images/ml/knn.png" alt="Results window" class="image" />
                 <div class="inner">
                   <h4>K - nearest neighbours</h4>
                   <p><strong>KNN</strong> is one of the simplest non-parametric classification algorithms. Here, starting from basic ideas in <strong>kernel density estimation</strong> and Bayes' rule a simple (albeit slow and sloppy) algorithm is derived which "only" requires the computation and sorting of distances in $L^p$.<br />We test the algorithm on the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10</a> dataset with a C++11 implementation and a viewer written with <a href="https://www.qt.io/">Qt</a> for the results.</p>
@@ -108,7 +108,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               </article>
 
               <article>
-                <img src="images/ml/em.svg" alt="" class="image"/>
+                <img src="images/ml/em.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Expectation maximization</h4>
                   <p><strong>EM</strong> is a generic iterative algorithm for the maximization of the log likelihood. Following (very closely) Bishop's book we discuss its general form, applied to Gaussian models with latent variables as motivation. Some limitations are discussed. Finally we also say a few words about the Kullback-Leibler divergence and other information theoretic ideas to be able to show why EM works.</p>
@@ -130,6 +130,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection"><span class="label">Code</span></a></li>
                   <li><a class="icon fa-file-pdf-o" href=""><span class="label">Doc</span></a></li>
                   <li><a class="icon fa-laptop" href="ml/bmm-beamer.pdf"><span class="label">Presentation</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
 
@@ -147,19 +148,19 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               </article>
 
 <article>
-                <a href="#" class="image"><img src="images/ml/data-assimilation.svg" alt="" /></a>
+                <img src="images/ml/data-assimilation.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Data assimilation</h4>
                   <p>Python implementations of some algorithms and examples from Law & Stuart's book <a href="http://www.springer.com/us/book/9783319203249">Data Assimilation</a>. Some of this was written with Philipp Wacker.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/data-assimilation"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
 
-
               <article>
-                <img src="images/ml/hmm.svg" alt="" class="image" />
+                <img src="images/ml/hmm.svg" alt="Hidden Markov Models" class="image" />
                 <div class="inner">
                   <h4>Hidden Markov Models</h4>
                   <p>A (pure, vectorized) Python implementation of an <strong>HMM</strong> with discrete emissions given either by probability tables or Poisson distributions. Parameter estimation is done using the <em>Baum-Welch</em> algorithm for HMMs, which actually is Expectation Maximization. In this application we experience how badly EM tends to get stuck in local optima. This code was written during a short stay at the chair of Computational Neuroscience in the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the Ludwig-Maximilians-Universit&auml;t M&uuml;nchen.</p>
@@ -179,6 +180,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/quantum-tictactoe"><span class="label">Code</span></a></li>
                   <li><a class="icon fa-file-pdf-o" href="ml/mcts.pdf"><span class="label">Doc</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
 
@@ -191,11 +193,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/sampling"><span class="label">Code</span></a></li>
                   <li><a class="icon fa-file-pdf-o" href="ml/ars.pdf"><span class="label">Doc</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
 
               <article>
-                <a href="#" class="image"><img src="images/ml/cmusml.svg" alt="" /></a>
+                <img src="images/ml/cmusml.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>CMU - SML</h4>
                   <p>Python implementation of some algorithms from Larry Wasserman's course <a href="http://www.stat.cmu.edu/~larry/=sml/">"Statistical Machine Learning"</a>. For now, I only have <b>nonparametric regression</b>, with Nadaraya-Watson, Local Polynomial Estimation and Leave-One-Out Cross-Validation applied to select the bandwidth.
@@ -210,7 +213,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           </div>
         </section>
 
-        <!-- Three -->
+        <!-- Math -->
         <section id="math">
           <div class="container">
             <header class="major">
@@ -218,8 +221,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               <p>My meager contributions to mathematical science</p>
             </header>
             <div class="features">
+
               <article>
-                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                <img src="images/pic01.jpg" alt="" class="image" />
                 <div class="inner">
                   <h4>Effective theories for multilayered materials</h4>
                   <p>My Ph.D. thesis...</p>
@@ -228,10 +232,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <li><a class="icon fa-file-pdf-o" href="math/phd.pdf"><span class="label">Doc</span></a></li>
                   <li><a class="icon fa-laptop" href="math/phd-beamer.pdf"><span class="label">Presentation 2013</span></a></li>
                   <li><a class="icon fa-file-text-o" href="math/phd.tm"><span class="label">TeXmacs source</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
+
               <article>
-                <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                <img src="images/pic02.jpg" alt="" class="image" />
                 <div class="inner">
                   <h4>Some remarks on the contact set for the Signorini problem</h4>
                   <p>I should finish this.</p>
@@ -240,10 +246,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <li><a class="icon fa-file-pdf-o" href="math/signorini.pdf"><span class="label">Doc</span></a></li>
                   <li><a class="icon fa-laptop" href="math/signorini-beamer.pdf"><span class="label">Presentation 2014</span></a></li>
                   <li><a class="icon fa-file-text-o" href="math/signorini.tm"><span class="label">TeXmacs source</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
+
               <article>
-                <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                <img src="images/pic03.jpg" alt="" class="image" />
                 <div class="inner">
                   <h4>On the contact between two linearly elastic bodies</h4>
                   <p>Master's thesis...</p>
@@ -254,10 +262,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <li><a class="icon fa-laptop" href="math/ma-tum-beamer.pdf"><span class="label">Presentation 2013</span></a></li>
                   <li><a class="icon fa-laptop" href="math/ma-una-beamer.pdf"><span class="label">Presentation 2014</span></a></li>
                   <li><a class="icon fa-file-text-o" href="math/ma.tm"><span class="label">TeXmacs source</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
+
               <article>
-                <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                <img src="images/pic03.jpg" alt="" class="image" />
                 <div class="inner">
                   <h4>Sobre un problema de contacto en elasticidad</h4>
                   <p>Bachelor's thesis...</p>
@@ -266,6 +276,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <li><a class="icon fa-file-pdf-o" href="math/ba.pdf"><span class="label">Doc</span></a></li>
                   <li><a class="icon fa-laptop" href="math/ba-ucm-beamer.pdf"><span class="label">Presentation 2013</span></a></li>
                   <li><a class="icon fa-file-text-o" href="math/ba.tm"><span class="label">TeXmacs source</span></a></li>
+                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
             </div>
@@ -301,6 +312,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 </div>
               <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/pzzapp"><span class="label">Code</span></a></li>
+                <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
 
               </article>
@@ -344,32 +356,31 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               <p>From the nobody-cares dept.</p>
             </header>
             <ul>
-              <li>WS 2015: Übung Dynamische Systeme (UNA, Prof. Dr. Dirk Blömker). <span class="icon fa-file-pdf-o" style="float:right;"></span></li>
+              <li>WS 2015: Übung Dynamische Systeme (UNA, <a href="https://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/bloemker/">Prof. Dr. Dirk Blömker</a>). <span class="icon fa-file-pdf-o" style="float:right;"></span></li>
               <li>WS 2015: Tutorübung Brückenkurs Mathematik (UNA).</li>
-              <li>SS 2015: Tutorübung Gewöhnliche Differentialgleichungen (UNA, Dr. Evgeny Volkov).  <span class="icon fa-file-pdf-o" style="float:right;"></span></li>
-              <li>WS 2014: Assistent Analysis 3 (UNA, Prof. Dr. Bernd Schmidt). <span class="icon fa-file-pdf-o" style="float:right;"></span></li>
-              <li>SS 2014: Tutorübung Analysis 2 (UNA, Prof. Dr. Bernd Schmidt).</li>
-              <li>WS 2013: Tutorübung Höhere Mathematik 1 für Ingenieurwiss. (TUM, Prof. Dr. Jürgen Scheurle).</li>
-              <li>SS 2013: Tutorübung Höhere Mathematik 2 für Ingenieurwiss. (TUM, Prof. Dr. Jürgen Scheurle).</li>
+              <li>SS 2015: Tutorübung Gewöhnliche Differentialgleichungen (UNA, <a href="">Dr. Evgeny Volkov</a>).  <span class="icon fa-file-pdf-o" style="float:right;"></span></li>
+              <li>WS 2014: Assistent Analysis 3 (UNA, <a href="#people">Prof. Dr. Bernd Schmidt</a>). <span class="icon fa-file-pdf-o" style="float:right;"></span></li>
+              <li>SS 2014: Tutorübung Analysis 2 (UNA, <a href="#people">Prof. Dr. Bernd Schmidt)</a>.</li>
+              <li>WS 2013: Tutorübung Höhere Mathematik 1 für Ingenieurwiss. (TUM, <a href="http://www-m8.ma.tum.de/personen/scheurle/">Prof. Dr. Jürgen Scheurle</a>).</li>
+              <li>SS 2013: Tutorübung Höhere Mathematik 2 für Ingenieurwiss. (TUM, <a href="http://www-m8.ma.tum.de/personen/scheurle/">Prof. Dr. Jürgen Scheurle</a>).</li>
             </ul>
           </div>
         </section>
+
         <!-- Six -->
         <section id="people">
           <div class="container">
             <header>
-              <h3>People</h3>
+              <h2>People</h2>
             </header>
-            <p>
-              It is trite but true: I owe so much to so many people that it would be silly to list them all. Here's a list of those with whom I have worked most closely.
-            </p>
+            <p>It is a trite thing to say but still true: I owe so much to so many people that it would be silly to list them all. Here's a list of those with whom I have worked most closely.</p>
             <ul class="feature-icons">
-              <li class="fa-male">Luigi Amedeo Bianchi</li>
-              <li class="fa-male">Ana Cañizares García</li>
-              <li class="fa-male">Jesús Ildefonso Díaz Díaz</li>
-              <li class="fa-male">Bernd Schmidt</li>
-              <li class="fa-male">Álvaro Tejero Cantero</li>
-              <li class="fa-male">Philipp Wacker</li>
+              <li class="fa-user"><a href="">Luigi Amedeo Bianchi</a></li>
+              <li class="fa-user"><a href="">Ana Cañizares García</a></li>
+              <li class="fa-user"><a href="">Jesús Ildefonso Díaz Díaz</a></li>
+              <li class="fa-user"><a href="">Bernd Schmidt</a></li>
+              <li class="fa-user"><a href="">Álvaro Tejero Cantero</a></li>
+              <li class="fa-user"><a href="">Philipp Wacker</a></li>
               <li></li> <!-- needed -->
             </ul>
           </div>
@@ -383,7 +394,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               <p>From the self-plug dept.</p>
             </header>
             <p>
-              <span class="image right"><img class="image avatar" src="images/avatar.jpg" alt="Myself"/></span>
+              <span class="image right"><img class="image avatar" src="images/people/me.svg" alt="Myself"/></span>
               I'm a Ph.D. student in mathematics currently working on effective two dimensional theories for thin multi-layered materials and their minimizers.<br/><br /> In the past I've worked with contact problems in linear elasticity, in particular I investigated some properties of the coincidence set for the classical Signorini problem and studied the mathematical properties of the two body problem together with some numerical computations, using the open source toolbox DUNE.<br /><br />
               I devote some of my free time to teaching myself a few methods in <a href="#ml">machine learning</a>. If you are interested or have any ideas for a talk or project, drop me a line.
             </p>

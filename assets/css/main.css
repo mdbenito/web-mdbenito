@@ -2029,12 +2029,12 @@ input[type="radio"] + label:before {
 .image.avatar {
   border-radius: 100%;
   overflow: hidden;
+  width: 8em;
 }
 
 .image.avatar img {
   border-radius: 100%;
   display: block;
-  width: 100%;
 }
 
 /* List */
