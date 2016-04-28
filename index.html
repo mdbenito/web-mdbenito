@@ -71,6 +71,34 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             </header>
             <p>I devote some of my free time to studying (statistical) machine learning. Often this is followed by some toy implementation and sometimes by a document summarizing ideas or collecting proofs. The selection of topics is rather arbitrary, as is the depth with which they are covered. I usually try to keep some moderate level of rigour, but I often I remain at the level of a (mildly) mathematically sofisticated practitioner.</p>
             <div class="features">
+
+            <article>
+                <img src="images/ml/bml.png" alt="" class="image" />
+                <div class="inner">
+                  <h4>Bayesian model selection</h4>
+                  <p>In this note we introduce <b>linear regression with basis functions</b> in order to apply Bayesian model selection. The goal is to incorporate <b>Occam's razor</b> through Bayesian analysis in order to automatically pick the model optimally able to explain the data without overfitting. This is joint fun with Philipp Wacker.</p>
+                </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection"><span class="label">Code</span></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="http://arxiv.org/abs/1512.04823"><span class="label">Doc</span></a></li>
+                  <li><a class="icon fa-laptop" href="ml/bmm-beamer.pdf"><span class="label">Presentation</span></a></li>
+                  <li><a class="icon fa-users" href="#people" data-people="#philipp"><span class="label">People</span></a></li>
+                </ul>
+              </article>
+
+              <article>
+                <img src="images/ml/mcts.svg" alt="" class="image" />
+                <div class="inner">
+                  <h4>Monte Carlo Tree Search</h4>
+                  <p><b>MCTS</b> is a moderately recent (2006) algorithm for playing games by partially building their decision trees. The key is to use random simulations of the game for those choices which seem most fruitful according to a criterion balancing <em>exploration</em> of new venues and <em>exploitation</em> of good ones. An implementation in Python for a simple game of <a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum TicTacToe</a> provides a nice testbed. This is joint fun with Ana Ca&ntilde;izares, based on work by Philipp Wacker.</p>
+                </div>
+                <ul class="icons">
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/quantum-tictactoe"><span class="label">Code</span></a></li>
+                  <!-- <li><a class="icon fa-file-pdf-o" href="ml/mcts.pdf"><span class="label">Doc</span></a></li> -->
+                  <li><a class="icon fa-users" href="#people" data-people="#ana,#philipp"><span class="label">People</span></a></li>
+                </ul>
+              </article>
+
               <article>
                 <img src="images/ml/knn.png" alt="Results window" class="image" />
                 <div class="inner">
@@ -99,7 +127,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <img src="images/ml/gms.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Gaussian Mixtures</h4>
-                  <p>We apply GMs to classification: one models the data as a convex combination of Gaussians: $$p (x) = \sum_{k = 1}^K \pi_k \mathcal{N} (x| \mu_k, S_k), \quad x \in \mathbb{R}^d,$$ then one introduces latent variables $Z$ assigning data points to classes and maximize the expected value of $\log p (\mathbf{x}, \mathbf{z}| \theta)$ under the posterior of $\mathbf{Z}|\mathbf{X}=\mathbf{x}$. We apply <em>expectation maximization</em> to learn the model parameters.</p>
+                  <p>We apply GMs to classification: one models the data as a convex combination of Gaussians: $$p (x) = \sum_{k = 1}^K \pi_k \mathcal{N} (x| \mu_k, S_k), \quad x \in \mathbb{R}^d,$$ then one introduces latent variables $Z$ assigning data points to classes and maximize the expected value of $\log p (\mathbf{x}, \mathbf{z}| \theta)$ under the posterior of $\mathbf{Z}|\mathbf{X}=\mathbf{x}$. We apply <b>expectation maximization</b> to learn the model parameters.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/"><span class="label">Code</span></a></li>
@@ -117,20 +145,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/"><span class="label">Code</span></a></li>
                   <li><a class="icon fa-file-pdf-o" href="ml/expectation-maximization.pdf"><span class="label">Doc</span></a></li>
                   <li><a class="icon fa-laptop" href="ml/expectation-maximization-beamer.pdf"><span class="label">Presentation</span></a></li>
-                </ul>
-              </article>
-
-              <article>
-                <img src="images/ml/bml.png" alt="" class="image" />
-                <div class="inner">
-                  <h4>Bayesian model selection</h4>
-                  <p>In this note we introduce linear regression with basis functions in order to apply Bayesian model selection. The goal is to incorporate Occam's razor through Bayesian analysis in order to automatically pick the model optimally able to explain the data without overfitting. This is joint fun with Philipp Wacker.</p>
-                </div>
-                <ul class="icons">
-                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection"><span class="label">Code</span></a></li>
-                  <li><a class="icon fa-file-pdf-o" href=""><span class="label">Doc</span></a></li>
-                  <li><a class="icon fa-laptop" href="ml/bmm-beamer.pdf"><span class="label">Presentation</span></a></li>
-                  <li><a class="icon fa-users" href="#people" data-people="#philipp"><span class="label">People</span></a></li>
                 </ul>
               </article>
 
@@ -163,24 +177,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <img src="images/ml/hmm.svg" alt="Hidden Markov Models" class="image" />
                 <div class="inner">
                   <h4>Hidden Markov Models</h4>
-                  <p>A (pure, vectorized) Python implementation of an <strong>HMM</strong> with discrete emissions given either by probability tables or Poisson distributions. Parameter estimation is done using the <em>Baum-Welch</em> algorithm for HMMs, which actually is Expectation Maximization. In this application we experience how badly EM tends to get stuck in local optima. This code was written during a short stay at the chair of Computational Neuroscience in the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the Ludwig-Maximilians-Universit&auml;t M&uuml;nchen.</p>
+                  <p>A (pure, vectorized) Python implementation of an <strong>HMM</strong> with discrete emissions given either by probability tables or Poisson distributions. Parameter estimation is done using the <b>Baum-Welch</b> algorithm for HMMs, which actually is <b>Expectation Maximization</b>. In this application we experience how badly EM tends to get stuck in local optima. This code was written during a short stay at the chair of Computational Neuroscience in the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the Ludwig-Maximilians-Universit&auml;t M&uuml;nchen.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection"><span class="label">Code</span></a></li>
                   <li><a class="icon fa-file-pdf-o" href=""><span class="label">Doc</span></a></li>
-                </ul>
-              </article>
-
-              <article>
-                <img src="images/ml/mcts.svg" alt="" class="image" />
-                <div class="inner">
-                  <h4>Monte Carlo Tree Search</h4>
-                  <p>Monte Carlo Tree Search is a moderately recent (2006) algorithm for playing games by partially building their decision trees. The key is to use random simulations of the game for those choices which seem most fruitful according to a criterion balancing <em>exploration</em> of new venues and <em>exploitation</em> of good ones. An implementation in <class style="font-variant: small-caps">Python</class> for a simple game of <a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum TicTacToe</a> provides a nice testbed. This is joint fun with Ana Ca&ntilde;izares, based on work by Philipp Wacker.</p>
-                </div>
-                <ul class="icons">
-                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/quantum-tictactoe"><span class="label">Code</span></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="ml/mcts.pdf"><span class="label">Doc</span></a></li>
-                  <li><a class="icon fa-users" href="#people" data-people="#ana,#philipp"><span class="label">People</span></a></li>
                 </ul>
               </article>
 
@@ -226,7 +227,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <img src="images/pic01.jpg" alt="" class="image" />
                 <div class="inner">
                   <h4>Effective theories for multilayered materials</h4>
-                  <p>My Ph.D. thesis...</p>
+                  <p>Following the work of Friesecke, James and Müller, a hierarchy of two-dimensional theories as a function of the scaling of applied forces is derived as a $\Gamma$-limit of three-dimensional elasticity, when the energy density is not homogeneous and one has mismatching energy wells. The focus is now an investigation and characterisation of the minimisers in the different regimes arising.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-file-pdf-o" href="math/phd.pdf"><span class="label">Doc</span></a></li>
@@ -237,10 +238,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               </article>
 
               <article>
-                <img src="images/pic02.jpg" alt="" class="image" />
+                <img src="images/math/signorini.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Some remarks on the contact set for the Signorini problem</h4>
-                  <p>I should finish this.</p>
+                  <p>We study some properties of the coincidence set for the boundary Signorini problem, improving some results from previous work in [Día80, DJ88]. We first show that some of the features of the equations studied in those papers are of technical nature and are easily avoided using standard tools. We then show with an example why the geometrical assumptions made there are not optimal and proceed to prove a new theorem without them in which we construct a local supersolution based on the intrinsic distance over the boundary manifold.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-file-pdf-o" href="math/signorini.pdf"><span class="label">Doc</span></a></li>
@@ -251,10 +252,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               </article>
 
               <article>
-                <img src="images/pic03.jpg" alt="" class="image" />
+                <img src="images/math/ma.png" alt="" class="image" />
                 <div class="inner">
                   <h4>On the contact between two linearly elastic bodies</h4>
-                  <p>Master's thesis...</p>
+                  <p>We first introduce the problem of the contact of two elastic bodies in the context of classical linear elasticity, then gather all necessary results for the proof of existence and uniqueness of a solution. The main proof of existence is conducted using two different approaches, depending on the coercivity of the bilinear form associated with the elastic potential. (...) We briefly present a fite element discretization and an algorithm for the solution. In particular we focus on some fairly recent advances in the resolution of the non-linearity at the contact zone via iterative methods [using] a mortar method with dual Lagrange multipliers. (...)</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/signorini-dune"><span class="label">Code</span></a></li>
@@ -262,15 +263,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                   <li><a class="icon fa-laptop" href="math/ma-tum-beamer.pdf"><span class="label">Presentation 2013</span></a></li>
                   <li><a class="icon fa-laptop" href="math/ma-una-beamer.pdf"><span class="label">Presentation 2014</span></a></li>
                   <li><a class="icon fa-file-text-o" href="math/ma.tm"><span class="label">TeXmacs source</span></a></li>
-                  <li><a class="icon fa-users" href="#people"><span class="label">People</span></a></li>
                 </ul>
               </article>
 
               <article>
-                <img src="images/pic03.jpg" alt="" class="image" />
+                <img src="images/math/ba.svg" alt="" class="image" />
                 <div class="inner">
                   <h4>Sobre un problema de contacto en elasticidad</h4>
-                  <p>Bachelor's thesis...</p>
+                  <p>After a quick review of linear elasticity theory, we study the classical problem which considers the stationary equilibrium of an elastic body resting on a frictionless surface (Signorini problem). Its essential property is found in the unilateral boundary conditions given in subsets of the boundary unknown a priori which model the lack of knowledge about the region where contact happens and make the problem non-linear. The coincidence set, where the inequalities defining the boundary conditions become equalities, is then studied in both the vectorial and the scalar settings from two viewpoints. (...)</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-file-pdf-o" href="math/ba.pdf"><span class="label">Doc</span></a></li>
