@@ -2087,10 +2087,13 @@ ul.feature-icons li {
   text-decoration: none;
   display: inline-block;
   margin: 0 0 1.6875em 0;
-  padding: 0.35em 0 0 3.5em;
+  padding: 0.35em 0 0 110px;
   position: relative;
   vertical-align: top;
   width: 48%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  line-height: 100px;
 }
 
 ul.feature-icons li:before {
@@ -2116,6 +2119,13 @@ ul.feature-icons li:before {
   width: 2.5em;
 }
 
+#luigi { background-image: url('../../images/people/luigi.jpg'); }
+#ana { background-image: url('../../images/people/ana.jpg'); }
+#ildefonso { background-image: url('../../images/people/ildefonso.jpg'); }
+#bernd { background-image: url('../../images/people/bernd.jpg'); }
+#alvaro { background-image: url('../../images/people/alvaro.jpg'); }
+#philipp { background-image: url('../../images/people/philipp.jpg'); }
+#me { background-image: url('../../images/people/me.jpg'); }
 ul.icons {
   cursor: default;
   list-style: none;
@@ -3017,6 +3027,12 @@ input[type="button"]:disabled,
     -ms-transform: translateX(-17em);
     transform: translateX(-17em);
   }
+
+  /* Icons for people */
+  ul.feature-icons li {
+    width: 100%;
+    margin-left: 50px;
+}
 
 }
 
