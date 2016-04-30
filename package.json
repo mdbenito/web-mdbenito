@@ -1,0 +1,24 @@
+{
+  "name": "mdbenito",
+  "version": "1.0.0",
+  "private": true,
+  "repo": "https://bitbucket.org/mdbenito/web.git",
+  "_aerobatic": {
+    "omitClientConfigVar": true,
+    "router": [
+      {
+        "module": "basic-auth",
+        "path": "/protected-standard",
+        "options": {
+          "username": "$BASIC_AUTH_USERNAME",
+          "password": "$BASIC_AUTH_PASSWORD"
+        }
+      },
+      {
+        "module": "webpage",
+        "options": {
+        }
+      }
+    ]
+  }
+}
