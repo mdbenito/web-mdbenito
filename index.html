@@ -78,7 +78,7 @@
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection" title="Code" rel="tipsy"></a></li>
                   <li><a class="icon fa-file-pdf-o" href="http://arxiv.org/abs/1512.04823" title="Document" rel="tipsy"></a></li>
-                  <li><a class="icon fa-laptop" href="ml/bms-talk.pdf" title="Slides" rel="tipsy"></a></li>
+                  <li><a class="icon fa-laptop" href="https://bitbucket.org/mdbenito/modelselection/src/master/doc/slides.pdf" title="Slides" rel="tipsy"></a></li>
                   <li><a class="icon fa-users people-link people-link" href="#people" data-people="#philipp" title="People" rel="tipsy"></a></li>
                 </ul>
               </article>
@@ -91,7 +91,7 @@
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/quantum-tictactoe" title="Code" rel="tipsy"></a></li>
-                  <!-- <li><a class="icon fa-file-pdf-o" href="ml/mcts.pdf" title="Document" rel="tipsy"></a></li> -->
+                  <!-- <li><a class="icon fa-file-pdf-o" href="files/ml/mcts.pdf" title="Document" rel="tipsy"></a></li> -->
                   <li><a class="icon fa-users people-link" href="#people" data-people="#ana,#philipp" title="People" rel="tipsy"></a></li>
                 </ul>
               </article>
@@ -104,31 +104,19 @@
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/knn" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="ml/knn.pdf" title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="files/ml/knn.pdf" title="Document" rel="tipsy"></a></li>
                 </ul>
               </article>
 
               <article>
-                <img src="images/ml/kmeans.svg" alt="" class="image" />
+                <img src="images/ml/km2em.svg" alt="" class="image" />
                 <div class="inner">
-                  <h4>K-means</h4>
-                  <p><strong>K-means</strong> is a clustering algorithm whose goal is to match each data point to exactly one of $K$ clusters in a way such that the sum of the squares of the distances of each data point to the center of mass of its assigned cluster is minimal. The minimization can be done using <b>expectation maximization</b>. We also briefly discuss <b>K-Means++</b> and a parallelization technique.</p>
+                  <h4>K-means and Gaussian Mixtures</h4>
+                  <p><strong>K-means</strong> is a simple clustering algorithm which matches each data point to exactly one of $K$ clusters in a way such that the sum of the squares of the distances of each data point to the center of mass of its assigned cluster is minimal. We review how this minimization can be performed iteratively in a manner closely linked to <b>Expectation Maximization</b> for <b>Gaussian mixtures</b>. We also briefly discuss <b>K-Means++</b>.</p>
                 </div>
                 <ul class="icons">
-                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/kmeans" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="ml/kmeans.pdf" title="Document" rel="tipsy"></a></li>
-                </ul>
-              </article>
-
-              <article>
-                <img src="images/ml/gms.svg" alt="" class="image" />
-                <div class="inner">
-                  <h4>Gaussian Mixtures</h4>
-                  <p>We apply GMs to classification: one models the data as a convex combination of Gaussians: $$p (x) = \sum_{k = 1}^K \pi_k \mathcal{N} (x| \mu_k, S_k), \quad x \in \mathbb{R}^d,$$ then one introduces latent variables $Z$ assigning data points to classes and maximize the expected value of $\log p (\mathbf{x}, \mathbf{z}| \theta)$ under the posterior of $\mathbf{Z}|\mathbf{X}=\mathbf{x}$. We apply <b>expectation maximization</b> to learn the model parameters.</p>
-                </div>
-                <ul class="icons">
-                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="ml/gaussian-mixtures.pdf" title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/km2em" title="Code" rel="tipsy"></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="https://bitbucket.org/mdbenito/km2em/raw/master/doc/em.pdf" title="Document" rel="tipsy"></a></li>
                 </ul>
               </article>
 
@@ -139,9 +127,7 @@
                   <p><b>EM</b> is a generic iterative algorithm for the maximization of the log likelihood. Following (very closely) Bishop's book we discuss its general form, applied to <b>Gaussian models</b> with latent variables as motivation. Some limitations are discussed. Finally we also say a few words about the <b>Kullback-Leibler</b> divergence and other information theoretic ideas to be able to show why EM works.</p>
                 </div>
                 <ul class="icons">
-                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="ml/expectation-maximization.pdf" title="Document" rel="tipsy"></a></li>
-                  <li><a class="icon fa-laptop" href="ml/expectation-maximization-talk.pdf" title="Slides" rel="tipsy"></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="https://bitbucket.org/mdbenito/km2em/src/master/doc/em.pdf" title="Document" rel="tipsy"></a></li>
                 </ul>
               </article>
 
@@ -152,9 +138,9 @@
                   <p>Starting with some elementary ideas on how to tackle the task of assigning s to images, we progress onto the classical <b>Perceptron</b>, then introduce <b>Optimal Margin Classifiers</b> and finally the primal version of the <b>SVM</b>. From there we do a short detour through <b>dual Lagrange</b> methods and introduce the standard dual formulation of the SVM and the construction of higher dimensional feature spaces with the <b>kernel trick</b>. Along the way we will discuss optimisation methods which will enable us to use SVMs on large data sets. We provide an implementation written in C++11, using <a href="http://arma.sourceforge.net/">Armadillo</a> and <a href="https://www.qt.io/">Qt</a>.</p>
                 </div>
                 <ul class="icons">
-                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="ml/svm.pdf" title="Document" rel="tipsy"></a></li>
-                  <li><a class="icon fa-laptop" href="ml/svm-talk.pdf" title="Slides" rel="tipsy"></a></li>
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/svm" title="Code" rel="tipsy"></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="https://bitbucket.org/mdbenito/svm/raw/doc/svm.pdf" title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon fa-laptop" href="https://bitbucket.org/mdbenito/svm/raw/doc/svm-slides.pdf" title="Slides" rel="tipsy"></a></li>
                 </ul>
               </article>
 
@@ -177,8 +163,7 @@
                   <p>A (pure, vectorized) Python implementation of an <strong>HMM</strong> with discrete emissions given either by probability tables or Poisson distributions. Parameter estimation is done using the <b>Baum-Welch</b> algorithm for HMMs, which actually is <b>Expectation Maximization</b>. In this application we experience how badly EM tends to get stuck in local optima. This code was written during a short stay at the chair of Computational Neuroscience in the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the Ludwig-Maximilians-Universit&auml;t M&uuml;nchen.</p>
                 </div>
                 <ul class="icons">
-                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/modelselection" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="" title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/hmm" title="Code" rel="tipsy"></a></li>
                 </ul>
               </article>
 
@@ -190,7 +175,7 @@
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/sampling" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="ml/ars.pdf" title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon fa-file-pdf-o" href="https://bitbucket.org/mdbenito/sampling/raw/master/doc/ars.pdf" title="Document" rel="tipsy"></a></li>
                   <li><a class="icon fa-users people-link" href="#people" data-people="#alvaro" title="People" rel="tipsy"></a></li>
                 </ul>
               </article>
@@ -320,11 +305,9 @@
                   <h4>rubiQ</h4>
                   <p>An OpenGL interface for a Rubik's cube solver. This was a project written for my algebra class, where we used semi-direct products to model the group of transformations of the cube. The solver used brute-force to compute the movements graph for the first two layers of the cube. Written in C++ and Qt.</p>
                 </div>
-              <ul class="icons">
+                <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="" style="color:grey;" title="Code" rel="tipsy"></a></li>
-                  <li><a class="icon fa-file-pdf-o" href="" title="Document" rel="tipsy"></a></li>
                 </ul>
-
               </article>
 
               <article>
