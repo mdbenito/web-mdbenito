@@ -415,6 +415,6 @@
 
     <script src="assets/js/everything.min.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script>/* my stuff */function fade_others(e){var o=$($("#people").data("people"));$(o).each(function(o,a){console.log($(a)),-1==$(e).index($(a))&&$(a).fadeTo(800,.1).delay(4e3).fadeTo(600,1)})}$(".people-link").click(function(){var e=$(this).data("people");fade_others($(e))}),$(function(){$("a[rel=tipsy],li[rel=tipsy]").tipsy({fade:!0,gravity:$.fn.tipsy.autoNS,delayIn:500})});</script>
+    <script>/* my stuff */function fade_others(e){var o=$($("#people").data("people"));$(o).each(function(o,a){-1==$(e).index($(a))&&$(a).fadeTo(800,.1).delay(4e3).fadeTo(600,1)})}$(".people-link").click(function(){var e=$(this).data("people");fade_others($(e))}),$(function(){$("a[rel=tipsy],li[rel=tipsy]").tipsy({fade:!0,gravity:$.fn.tipsy.autoNS,delayIn:500})});</script>
   </body>
 </html>
