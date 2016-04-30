@@ -2095,7 +2095,7 @@ ul.feature-icons li {
   background-repeat: no-repeat;
   line-height: 100px;
 }
-
+/*
 ul.feature-icons li:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -2118,7 +2118,7 @@ ul.feature-icons li:before {
   top: 0;
   width: 2.5em;
 }
-
+*/
 #luigi { background-image: url('../../images/people/luigi.jpg'); }
 #ana { background-image: url('../../images/people/ana.jpg'); }
 #ildefonso { background-image: url('../../images/people/ildefonso.jpg'); }
@@ -2126,6 +2126,7 @@ ul.feature-icons li:before {
 #alvaro { background-image: url('../../images/people/alvaro.jpg'); }
 #philipp { background-image: url('../../images/people/philipp.jpg'); }
 #me { background-image: url('../../images/people/me.jpg'); }
+
 ul.icons {
   cursor: default;
   list-style: none;
@@ -3031,9 +3032,18 @@ input[type="button"]:disabled,
   /* Icons for people */
   ul.feature-icons li {
     width: 100%;
-    margin-left: 50px;
-}
+    line-height: 50px;
+    margin: 10px 0 0 20px;
+    padding: 0 0 0 60px;
+  }
 
+  #luigi { background-image: url('../../images/people/luigi-small.jpg'); }
+  #ana { background-image: url('../../images/people/ana-small.jpg'); }
+  #ildefonso { background-image: url('../../images/people/ildefonso-small.jpg'); }
+  #bernd { background-image: url('../../images/people/bernd-small.jpg'); }
+  #alvaro { background-image: url('../../images/people/alvaro-small.jpg'); }
+  #philipp { background-image: url('../../images/people/philipp-small.jpg'); }
+  #me { background-image: url('../../images/people/me-small.jpg'); }
 }
 
 /* XSmall */
