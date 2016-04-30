@@ -10,9 +10,7 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <link rel="stylesheet" href="assets/css/tipsy.css" />
     <!-- Enable $ $ math delimiters for MathJax -->
-    <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
-    </script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });</script>
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
   </head>
   <body>
@@ -407,41 +405,16 @@
       <section id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; 2016 Miguel de Benito Delgado</li><li>Design based on: <a href="http://html5up.net">HTML5 UP Read only</a></li>
+            <li>&copy; 2016 Miguel de Benito Delgado</li>
+            <li>Design based on: <a href="http://html5up.net">HTML5 UP Read only</a></li>
           </ul>
         </div>
       </section>
 
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollzer.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src='assets/js/jquery.tipsy.js'></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
+    <script src="assets/js/everything.min.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
-    <script>
-      function fade_others(who_stays) {
-        var people = $($("#people").data('people'));
-        $(people).each(function(id, guy) {
-          console.log($(guy));
-          if ($(who_stays).index($(guy)) == -1) {
-            $(guy).fadeTo(800, 0.1).delay(4000).fadeTo(600, 1.0);
-          }
-        });
-      }
-      $(".people-link").click(function() {
-        var keep = $(this).data("people");
-        console.log(keep);
-        fade_others($(keep));
-      });
-      $(function() {
-//        $('a[rel=tipsy]').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
-        $('a[rel=tipsy]').tipsy({fade: true, gravity: 's', delayIn: 500});
-      });
-    </script>
+    <script>/* my stuff */function fade_others(e){var o=$($("#people").data("people"));$(o).each(function(o,a){console.log($(a)),-1==$(e).index($(a))&&$(a).fadeTo(800,.1).delay(4e3).fadeTo(600,1)})}$(".people-link").click(function(){var e=$(this).data("people");fade_others($(e))}),$(function(){$("a[rel=tipsy],li[rel=tipsy]").tipsy({fade:!0,gravity:$.fn.tipsy.autoNS,delayIn:500})});</script>
   </body>
 </html>
