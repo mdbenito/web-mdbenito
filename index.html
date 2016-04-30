@@ -38,7 +38,7 @@
           <li><a href="#about" class="icon fa-envelope" title="Drop me a line" rel="tipsy"></a></li>
           <li><a href="https://plus.google.com/u/0/+MigueldeBenitoDelgado" class="icon fa-google-plus" title="Google+ profile" rel="tipsy"></a></li>
           <li><a href="http://math.stackexchange.com/users/6280/miguel" class="icon fa-stack-exchange" title="Math Stack-Exchange" rel="tipsy"></a></li>
-          <li><a href="https://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/debenito/" class="icon fa-university" title="Page at my department's site" rel="tipsy"></a></li>
+          <li><a href="https://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/debenito/" class="icon fa-university" title="University" rel="tipsy"></a></li>
         </ul>
       </footer>
     </section>
@@ -455,7 +455,8 @@
         fade_others($(keep));
       });
       $(function() {
-        $('a[rel=tipsy]').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
+//        $('a[rel=tipsy]').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
+        $('a[rel=tipsy]').tipsy({fade: true, gravity: 's', delayIn: 500});
       });
     </script>
   </body>
