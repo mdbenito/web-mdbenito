@@ -12,6 +12,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+     <link rel="stylesheet" href="assets/css/tipsy.css" />
     <!-- Enable $ $ math delimiters for MathJax -->
     <script type="text/x-mathjax-config">
             MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });
@@ -783,6 +784,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollzer.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src='assets/js/jquery.tipsy.js'></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
@@ -801,6 +803,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         var keep = $(this).data("people");
         console.log(keep);
         fade_others($(keep));
+      });
+      $(function() {
+        $('a[rel=tipsy]').tipsy({fade: true, gravity: $.fn.tipsy.autoNS});
       });
     </script>
   </body>
