@@ -66,9 +66,8 @@
             </header>
             <p>I devote some of my free time to studying (statistical) machine learning. Often this is followed by some toy implementation and sometimes by a document summarizing ideas or collecting proofs. The selection of topics is rather arbitrary, as is the depth with which they are covered. I usually try to keep some moderate level of rigour, but I often I remain at the level of a (mildly) mathematically sophisticated practitioner.</p>
             <div class="features">
-
-            <article>
-                <img src="images/ml/bml.png" alt="" class="image" />
+              <article>
+                <span class="image"><img src="images/ml/bml.png" /><span class="vertical-label">Jan 2015</span></span>
                 <div class="inner">
                   <h4>Bayesian model selection</h4>
                   <p>In this note we introduce <b>linear regression with basis functions</b> in order to apply Bayesian model selection. The goal is to incorporate <b>Occam's razor</b> through Bayesian analysis in order to automatically pick the model optimally able to explain the data without overfitting. This is joint fun with <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.</p>
@@ -82,7 +81,7 @@
               </article>
 
               <article>
-                <img src="images/ml/mcts.png" alt="" class="image" />
+                <span class="image"><img src="images/ml/mcts.png" /><span class="vertical-label">Feb 2016</span></span>
                 <div class="inner">
                   <h4>Monte Carlo Tree Search</h4>
                   <p><b>MCTS</b> is a moderately recent (2006) algorithm for playing games by partially building their decision trees. The key is to use random simulations of the game for those choices which seem most fruitful according to a criterion balancing <em>exploration</em> of new venues and <em>exploitation</em> of good ones. An implementation in Python for a simple game of <b><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum TicTacToe</a></b> provides a nice testbed. This is joint fun with <a href="#people" class="people-link" data-people="#ana">Ana Ca&ntilde;izares</a>, based on work by <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.</p>
@@ -95,7 +94,7 @@
               </article>
 
               <article>
-                <img src="images/ml/knn.png" alt="Results window" class="image" />
+                <span class="image"><img src="images/ml/knn.png" alt="Results window" /><span class="vertical-label">Apr 2015</span></span>
                 <div class="inner">
                   <h4>K - nearest neighbours</h4>
                   <p><strong>KNN</strong> is one of the simplest non-parametric classification algorithms. Here, starting from basic ideas in <strong>kernel density estimation</strong> and Bayes' rule a simple (albeit slow and sloppy) algorithm is derived which "only" requires the computation and sorting of distances in $L^p$.<br />We test the algorithm on the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10</a> dataset with a C++11 implementation and a viewer written with <a href="https://www.qt.io/">Qt</a> for the results.</p>
@@ -107,7 +106,7 @@
               </article>
 
               <article>
-                <img src="images/ml/km2em.svg" alt="" class="image" />
+                <span class="image"><img src="images/ml/km2em.svg"/><span class="vertical-label">Oct 2014</span></span>
                 <div class="inner">
                   <h4>K-means and Gaussian Mixtures</h4>
                   <p><strong>K-means</strong> is a simple clustering algorithm which matches each data point to exactly one of $K$ clusters in a way such that the sum of the squares of the distances of each data point to the center of mass of its assigned cluster is minimal. We review how this minimization can be performed iteratively in a manner closely linked to <b>Expectation Maximization</b> for <b>Gaussian mixtures</b>. We also briefly discuss <b>K-Means++</b>.</p>
@@ -119,7 +118,7 @@
               </article>
 
               <article>
-                <img src="images/ml/em.svg" alt="" class="image" />
+                <span class="image"><img src="images/ml/em.svg" /><span class="vertical-label">Oct 2014</span></span>
                 <div class="inner">
                   <h4>Expectation maximization</h4>
                   <p><b>EM</b> is a generic iterative algorithm for the maximization of the log likelihood. Following (very closely) Bishop's book we discuss its general form, applied to <b>Gaussian models</b> with latent variables as motivation. Some limitations are discussed. Finally we also say a few words about the <b>Kullback-Leibler</b> divergence and other information theoretic ideas to be able to show why EM works.</p>
@@ -130,7 +129,7 @@
               </article>
 
               <article>
-                <img src="images/ml/svm.png" alt="" class="image" />
+                <span class="image"><img src="images/ml/svm.png" /><span class="vertical-label">May 2015</span></span>
                 <div class="inner">
                   <h4>Support Vector Machines</h4>
                   <p>Starting with some elementary ideas on how to tackle the task of assigning s to images, we progress onto the classical <b>Perceptron</b>, then introduce <b>Optimal Margin Classifiers</b> and finally the primal version of the <b>SVM</b>. From there we do a short detour through <b>dual Lagrange</b> methods and introduce the standard dual formulation of the SVM and the construction of higher dimensional feature spaces with the <b>kernel trick</b>. Along the way we will discuss optimisation methods which will enable us to use SVMs on large data sets. We provide an implementation written in C++11, using <a href="http://arma.sourceforge.net/">Armadillo</a> and <a href="https://www.qt.io/">Qt</a>.</p>
@@ -143,7 +142,7 @@
               </article>
 
               <article>
-                <img src="images/ml/data-assimilation.svg" alt="" class="image" />
+                <span class="image"><img src="images/ml/data-assimilation.svg" /><span class="vertical-label">Dec 2015</span></span>
                 <div class="inner">
                   <h4>Data assimilation</h4>
                   <p><b>DA</b> is the task of incorporating data into models given by stochastic dynamical systems. In the simpler discrete case, one considers stochastic dynamics given by $v_{j + 1} = \Psi (v_j) + \xi_j,$ with i.i.d additive noise, together with a sequence of observations given by $y_{j + 1} = h(v_{j + 1}) + \eta_{j + 1}$, where $\eta_j$ is again i.i.d. These are Python implementations of a few algorithms and examples from Law &amp; Stuart's book <a href="http://www.springer.com/us/book/9783319203249">Data Assimilation</a>, partly written in collaboration with <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.</p>
@@ -155,7 +154,7 @@
               </article>
 
               <article>
-                <img src="images/ml/hmm.svg" alt="Hidden Markov Models" class="image" />
+                <span class="image"><img src="images/ml/hmm.svg" alt="Hidden Markov Models" /><span class="vertical-label">Dec 2015</span></span>
                 <div class="inner">
                   <h4>Hidden Markov Models</h4>
                   <p>A (pure, vectorized) Python implementation of an <strong>HMM</strong> with discrete emissions given either by probability tables or Poisson distributions. Parameter estimation is done using the <b>Baum-Welch</b> algorithm for HMMs, which actually is <b>Expectation Maximization</b>. In this application we experience how badly EM tends to get stuck in local optima. This code was written during a short stay at the chair of Computational Neuroscience in the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the Ludwig-Maximilians-Universit&auml;t M&uuml;nchen.</p>
@@ -166,7 +165,7 @@
               </article>
 
               <article>
-                <img src="images/ml/ars.svg" alt="" class="image" />
+                <span class="image"><img src="images/ml/ars.svg" /><span class="vertical-label">Feb 2016</span></span>
                 <div class="inner">
                   <h4>Adaptive Rejection Sampling</h4>
                   <p><strong>ARS</strong> is a general technique for sampling from a <a href="https://en.wikipedia.org/wiki/Logarithmically_concave_function">log-concave</a> distribution. An upper bound of the target density is computed using tangents to its logarithm, then transformed back into a sum of exponentials from which it is easy to sample. After explaining the algorithm we provide basic theoretical justification for it. In a simple Python implementation we also test <a href="https://github.com/HIPS/autograd">autograd</a>, a package for <a href="https://en.wikipedia.org/wiki/Automatic_differentiation">Automatic Differentiation</a>. Work with <a href="#people" class="people-link" data-people="#alvaro">&Aacute;lvaro Tejero</a>.</p>
@@ -179,7 +178,7 @@
               </article>
 
               <article>
-                <img src="images/ml/cmusml.svg" alt="" class="image" />
+                <span class="image"><img src="images/ml/cmusml.svg" /><span class="vertical-label">Apr 2016</span></span>
                 <div class="inner">
                   <h4>CMU - SML</h4>
                   <p>Python implementation of some algorithms from Larry Wasserman's course <a href="http://www.stat.cmu.edu/~larry/=sml/">"Statistical Machine Learning"</a>. For now, I only have <b>nonparametric regression</b>, with Nadaraya-Watson, Local Polynomial Estimation and Leave-One-Out Cross-Validation applied to select the bandwidth.
@@ -204,7 +203,7 @@
             <div class="features">
 
               <article>
-                <img src="images/pic01.jpg" alt="" class="image" />
+                <span class="image"><img src="images/pic01.jpg" /><span class="vertical-label">2014 - 2017 ?</span></span>
                 <div class="inner">
                   <h4>Effective theories for multilayered materials</h4>
                   <p>Following the work of Friesecke, James and Müller, a hierarchy of two-dimensional theories as a function of the scaling of applied forces is derived as a $\Gamma$-limit of three-dimensional elasticity, when the energy density is not homogeneous and one has mismatching energy wells. The focus is now an investigation and characterisation of the minimisers in the different regimes arising.</p>
@@ -218,7 +217,7 @@
               </article>
 
               <article>
-                <img src="images/math/signorini.svg" alt="" class="image" />
+                <span class="image"><img src="images/math/signorini.svg" /><span class="vertical-label">Dec 2013</span></span>
                 <div class="inner">
                   <h4>Some remarks on the contact set for the Signorini problem</h4>
                   <p>We study some properties of the coincidence set for the boundary Signorini problem, improving some results from previous work in [Día80, DJ88]. We first show that some of the features of the equations studied in those papers are of technical nature and are easily avoided using standard tools. We then show with an example why the geometrical assumptions made there are not optimal and proceed to prove a new theorem without them in which we construct a local supersolution based on the intrinsic distance over the boundary manifold.</p>
@@ -232,7 +231,7 @@
               </article>
 
               <article>
-                <img src="images/math/ma.png" alt="" class="image" />
+                <span class="image"><img src="images/math/ma.png" /><span class="vertical-label">Mar 2013</span></span>
                 <div class="inner">
                   <h4>On the contact between two linearly elastic bodies</h4>
                   <p>We first introduce the problem of the contact of two elastic bodies in the context of classical linear elasticity, then gather all necessary results for the proof of existence and uniqueness of a solution. The main proof of existence is conducted using two different approaches, depending on the coercivity of the bilinear form associated with the elastic potential. (...) We briefly present a finite element discretization and an algorithm for the solution. In particular we focus on some fairly recent advances in the resolution of the non-linearity at the contact zone via iterative methods [using] a mortar method with dual Lagrange multipliers. (...)</p>
@@ -247,7 +246,7 @@
               </article>
 
               <article>
-                <img src="images/math/ba.svg" alt="" class="image" />
+                <span class="image"><img src="images/math/ba.svg" /><span class="vertical-label">Jul 2012</span></span>
                 <div class="inner">
                   <h4>Sobre un problema de contacto en elasticidad</h4>
                   <p>After a quick review of linear elasticity theory, we study the classical problem which considers the stationary equilibrium of an elastic body resting on a frictionless surface (Signorini problem). Its essential property is found in the unilateral boundary conditions given in subsets of the boundary unknown a priori which model the lack of knowledge about the region where contact happens and make the problem non-linear. The coincidence set, where the inequalities defining the boundary conditions become equalities, is then studied in both the vectorial and the scalar settings from two viewpoints. (...)</p>
@@ -291,7 +290,7 @@
             </header>
             <div class="features">
               <article>
-                <a href="#" class="image"><img src="images/misc/puzzle.jpg" alt="" /></a>
+                <span class="image"><img src="images/misc/puzzle.jpg" alt="Screenshot of PzzApp" /><span class="vertical-label">Apr 2012</span></span>
                 <div class="inner">
                   <h4>PzzApp</h4>
                   <p>A simple 15-puzzle game written in Cocoa with <a href="#people" class="people-link" data-people="#ana">Ana Ca&ntilde;izares</a>. This was our first and only application in this language, mostly written during an intense weekend-hackathon. Don't raise your expectations too high.</p>
@@ -304,7 +303,7 @@
               </article>
 
               <article>
-                <a href="#" class="image"><img src="images/misc/rubiq.jpg" alt="" /></a>
+                <span class="image"><img src="images/misc/rubiq.jpg" alt="" /><span class="vertical-label">Jul 2007</span></span>
                 <div class="inner">
                   <h4>rubiQ</h4>
                   <p>An OpenGL interface for a Rubik's cube solver. This was a project written for my algebra class, where we used semi-direct products to model the group of transformations of the cube. The solver used brute-force to compute the movements graph for the first two layers of the cube. Written in C++ and Qt.</p>
@@ -315,7 +314,7 @@
               </article>
 
               <article>
-                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                <span class="image"><img src="images/pic01.jpg" alt="Screenshot of SuperPong" /><span class="vertical-label">Oct 2015</span></span>
                 <div class="inner">
                   <h4>SuperPong</h4>
                   <p>A clone of the 1972 classic Pong written in <a href="https://clojure.org/">clojure</a> with the idea of having fun and learning clojure while coding it.
