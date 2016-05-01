@@ -12,7 +12,7 @@
   float:left;
   position:absolute;
   left:-3em;
-  top:10em;
+  top:65%;
   font-size:large;
   color:#DDD;
 }
@@ -3054,9 +3054,7 @@ input[type="button"]:disabled,
 
   /* Other */
   .vertical-label {
-    top:13em;
     left:-2em;
-    font-size:large;
   }
 }
 
@@ -3124,7 +3122,7 @@ input[type="button"]:disabled,
 
     /* Other */
   .vertical-label {
-    top:8em;
+    top: 68%;
     left:-1.5em;
     font-size:medium;
   }
