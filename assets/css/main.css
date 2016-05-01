@@ -1,3 +1,4 @@
+/* Based on Read Only by HTML5 UP, html5up.net | @n33co, CCA 3.0 license. */
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
@@ -5,11 +6,16 @@
     font-variant: small-caps;
 }
 
-/*
-Read Only by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+.vertical-label {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+  float:left;
+  position:absolute;
+  left:-3em;
+  top:10em;
+  font-size:large;
+  color:#DDD;
+}
 
 /* Reset */
 
@@ -2439,6 +2445,7 @@ input[type="button"]:disabled,
   border-top: solid 3px #f4f4f4;
   margin-bottom: 2.25em;
   padding-top: 2.25em;
+  position:relative;
 }
 
 .features article:first-child {
@@ -2500,7 +2507,7 @@ input[type="button"]:disabled,
 }
 
 #header header p {
-  color: #b6e9dc;
+  color: #a5d8cb;
 }
 
 #header a {
@@ -2545,7 +2552,7 @@ input[type="button"]:disabled,
 }
 
 #header > footer .icons li a {
-  color: #b6e9dc;
+  color: #a5d8cb;
 }
 
 #header > nav ul {
@@ -2938,9 +2945,9 @@ input[type="button"]:disabled,
 
   .features article .image {
     display: block;
-    margin: 0 0 2.25em 0;
+    margin: 0 5% 2.25em 5%;
     padding-right: 0;
-    width: 100%;
+    width: 90%;
   }
 
   .features article .inner {
@@ -3044,6 +3051,13 @@ input[type="button"]:disabled,
   #alvaro { background-image: url('../../images/people/alvaro-small.jpg'); }
   #philipp { background-image: url('../../images/people/philipp-small.jpg'); }
   #me { background-image: url('../../images/people/me-small.jpg'); }
+
+  /* Other */
+  .vertical-label {
+    top:13em;
+    left:-2em;
+    font-size:large;
+  }
 }
 
 /* XSmall */
@@ -3106,6 +3120,13 @@ input[type="button"]:disabled,
   input[type="button"],
   .button {
     padding: 0;
+  }
+
+    /* Other */
+  .vertical-label {
+    top:8em;
+    left:-1.5em;
+    font-size:medium;
   }
 
 }
