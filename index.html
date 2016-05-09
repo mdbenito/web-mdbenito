@@ -50,8 +50,7 @@
         <section id="one">
           <div class="container">
             <header>
-<!--              <h2 class="title" id="logo">Things and stuff</h2> -->
-              <h2></h2>
+              <h2 class="title" id="logo" style="display:none">Things and stuff</h2>
               <p><a href="#about">I</a> am a person. I do things and stuff. Mostly <a href="#math">math</a>, often <a href="#software">software</a>, usually with <a href="#people">others</a>. This site collects some personal projects, mathematical and otherwise.</p>
             </header>
           </div>
@@ -97,7 +96,7 @@
                 <span class="image"><img src="images/ml/knn.png" alt="Results window" /><span class="vertical-label">Apr 2015</span></span>
                 <div class="inner">
                   <h4>K - nearest neighbours</h4>
-                  <p><strong>KNN</strong> is one of the simplest non-parametric classification algorithms. Here, starting from basic ideas in <strong>kernel density estimation</strong> and Bayes' rule a simple (albeit slow and sloppy) algorithm is derived which "only" requires the computation and sorting of distances in $L^p$.<br />We test the algorithm on the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10</a> dataset with a C++11 implementation and a viewer written with <a href="https://www.qt.io/">Qt</a> for the results.</p>
+                  <p><strong>KNN</strong> is one of the simplest non-parametric classification algorithms. I this note, we start from basic ideas in <strong>kernel density estimation</strong> and using Bayes' rule we derive this simple (albeit slow and sloppy) algorithm which "only" requires the computation and sorting of distances in $L^p$. We test its performance on the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10</a> dataset with a C++11 implementation using <a href="http://arma.sourceforge.net/">Armadillo</a> and a viewer written with <a href="https://www.qt.io/">Qt</a> for the results.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/knn" title="Code" rel="tipsy"></a></li>
@@ -132,7 +131,7 @@
                 <span class="image"><img src="images/ml/svm.png" /><span class="vertical-label">May 2015</span></span>
                 <div class="inner">
                   <h4>Support Vector Machines</h4>
-                  <p>Starting with some elementary ideas on how to tackle the task of assigning s to images, we progress onto the classical <b>Perceptron</b>, then introduce <b>Optimal Margin Classifiers</b> and finally the primal version of the <b>SVM</b>. From there we do a short detour through <b>dual Lagrange</b> methods and introduce the standard dual formulation of the SVM and the construction of higher dimensional feature spaces with the <b>kernel trick</b>. Along the way we will discuss optimisation methods which will enable us to use SVMs on large data sets. We provide an implementation written in C++11, using <a href="http://arma.sourceforge.net/">Armadillo</a> and <a href="https://www.qt.io/">Qt</a>.</p>
+                  <p>Starting with some elementary ideas on how to tackle the task of assigning labels to images, we progress onto the classical <b>Perceptron</b>, then introduce <b>Optimal Margin Classifiers</b> and finally the primal version of the <b>SVM</b>. From there we do a short detour through <b>dual Lagrange</b> methods and introduce the standard dual formulation of the SVM and the construction of higher dimensional feature spaces with the <b>kernel trick</b>. Along the way we will discuss optimisation methods which will enable us to use SVMs on large data sets. We provide an implementation written in C++11, using <a href="http://arma.sourceforge.net/">Armadillo</a> and <a href="https://www.qt.io/">Qt</a>.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon fa-bitbucket" href="https://bitbucket.org/mdbenito/svm" title="Code" rel="tipsy"></a></li>
