@@ -2475,15 +2475,11 @@ input[type="button"]:disabled,
   margin-bottom: 0;
 }
 
-.features article > .icons {
+article > .icons, .container > .icons {
   margin-top: 1em;
   text-align: center;
+  font-size: 120%;
 }
-
-.features article > .icons > a {
-  font-size: 40%;
-}
-
 
 /* Header */
 
