@@ -2602,6 +2602,8 @@ article > .icons, .container > .icons {
 }
 
 #main > section:first-child {
+  height:100vh;
+  padding-top: 20vh;
   border-top: 0;
 }
 
