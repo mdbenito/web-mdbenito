@@ -32,7 +32,7 @@
     var ids = [];
 
     // Set up nav items.
-    $nav_a
+    $nav_a.add('a[class$="-link"]')
     .scrolly({ offset: 44 })
     .on('click', function(event) {
 
@@ -52,7 +52,7 @@
       .addClass('scrollzer-locked');
 
       // Set active class on this link.
-      $this.addClass('active');
+      $nav_a.filter('a[href="' + href + '"]').addClass('active');
 
     })
     .each(function() {
