@@ -2736,7 +2736,7 @@ article > .icons, .container > .icons {
   /* Image */
 
   .image.left, .image.right {
-    max-width: 40%;
+    max-width: 25%;
   }
 
   .image.left img, .image.right img {
