@@ -2546,7 +2546,7 @@ article > .icons, .container > .icons {
   border-top: solid 2px #344766;
   display: block;
   padding: 0;
-  height: 44px;
+  height: 60px;
 }
 
 #header > nav ul li a {
@@ -2558,7 +2558,7 @@ article > .icons, .container > .icons {
   color: #ffffff !important;
   display: block;
   padding: 0;
-  line-height: 44px;
+  line-height: 60px;
   text-decoration: none;
 }
 
@@ -2590,7 +2590,7 @@ article > .icons, .container > .icons {
 
 #main > section:first-child {
   height:100vh;
-  padding-top: 20vh;
+  padding-top: 30vh;
   border-top: 0;
 }
 
@@ -2666,14 +2666,6 @@ article > .icons, .container > .icons {
     padding: 1.5em;
   }
 
-  #header > nav ul li {
-      height: 60px;
-  }
-
-  #header > nav ul li a {
-      line-height: 60px;
-  }
-
   /* Wrapper */
 
   #wrapper {
@@ -2685,11 +2677,6 @@ article > .icons, .container > .icons {
   #main > section > .container {
     padding: 4em 0 2em 0;
   }
-
-  #main > section:first-child {
-    padding-top: 30vh;
-  }
-
 }
 
 /* Large */
@@ -2781,6 +2768,13 @@ article > .icons, .container > .icons {
     top: auto;
   }
 
+  #header > nav ul li {
+      height: 44px;
+  }
+
+  #header > nav ul li a {
+      line-height: 44px;
+  }
   /* Wrapper */
 
   #wrapper {
