@@ -2463,7 +2463,7 @@ input[type="button"]:disabled,
 article > .icons, .container > .icons {
   margin-top: 1em;
   text-align: center;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 /* Header */
