@@ -3146,4 +3146,6 @@ article > .icons, .container > .icons {
     opacity: 1;
 }
 
-
+img.lazy {
+  display: none;
+}
