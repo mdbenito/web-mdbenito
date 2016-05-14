@@ -6,7 +6,7 @@ CLOSURE_COMPILER=/Users/miguel/Applications/closure-compiler/compiler.jar
 
 # JS config
 JS_SRC_DIR=src/js
-JS_FILES=jquery.min.js jquery.scrolly.min.js jquery.scrollzer.min.js jqmath-etc-0.4.3.min.js jquery.tipsy.js skel.js util.js main.js
+JS_FILES=jquery.min.js jquery.scrolly.min.js jquery.scrollzer.min.js jqmath-etc-0.4.3.min.js jquery.tipsy.js jquery.lazyloadxt.js skel.js util.js main.js
 JS_IN=$(addprefix $(JS_SRC_DIR)/,$(JS_FILES))
 
 JS_DEST_DIR=js
@@ -14,7 +14,7 @@ JS_OUT=$(JS_DEST_DIR)/everything.min.js
 
 # CSS config
 CSS_SRC_DIR=src/css
-CSS_FILES=font-awesome.css main.css tipsy.css jqmath-0.4.3.css
+CSS_FILES=font-awesome.css main.css tipsy.css jqmath-0.4.3.css jquery.lazyloadxt.fadein.css
 CSS_IN=$(addprefix $(CSS_SRC_DIR)/,$(CSS_FILES))
 CSS_MIN=$(addsuffix .min,$(CSS_IN))
 
