@@ -12,15 +12,18 @@ javascript.
 * jqtmath implements a very small subset of LaTeX. In particular
 greek letters have to be input in unicode (e.g. α instead of \alpha).
 * The webfont is a stripped down version of Font Awesome. Done with
-  http://fontello.com. The config is in src/fonts/fontello-config.json.
+  http://fontello.com. The config is in `src/fonts/fontello-config.json`.
+  **NOTE** that the generated CSS uses the relative path of the package,
+  i.e. ../font/blah, whereas I'm using ../font*s*/blah.
+  **Don't** blindly overwrite `fa-mini.css`. Instead copy the new icons
+  and fix the paths as indicated in `src/css/fa-mini.css`
 
 ## To do
 
 * Fix vertical labels on browsers not supporting CSS rotations.
 * Reduce the size of biggest SVGs.
-* Automate font generation with fontello API. **NOTE** that the generated
-  CSS uses the relative path of the package, i.e. ../font/blah, whereas
-  I'm using ../font*s*/blah.
+* Automate font generation with fontello API. Careful with overwriting
+  local changes (see above).
 
 
 

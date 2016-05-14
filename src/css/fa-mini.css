@@ -1,5 +1,8 @@
 /*! Fontello generated webfont, based on FontAwesome */
-/* MDB: Careful! There are edits AFTER creating the webfont */
+/* MDB: Careful! There are edits AFTER creating the webfont
+  After generating a new webfont, copy here the new @font-face
+  and the new icons. In particular keep the styles.
+*/
 
 @font-face {
   font-family: 'fa-mini';
