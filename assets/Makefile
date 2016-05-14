@@ -44,4 +44,4 @@ $(JS_OUT): $(JS_IN)
 $(JS_IN):;
 
 clean:
-	@echo "Do I need this?"
+	rm $(CSS_MIN)
