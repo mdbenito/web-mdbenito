@@ -1,5 +1,6 @@
 /* Based on Read Only by HTML5 UP, html5up.net | @n33co, CCA 3.0 license. */
-@import url("font-awesome.min.css");
+/* Disable import for minification */
+/* @import url("font-awesome.min.css"); */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /* Reset */
@@ -3141,22 +3142,3 @@ article > .icons, .container > .icons {
   color:#DDD;
 }
 
-/*! Lazy Load XT v1.1.0 2016-01-12
- * http://ressio.github.io/lazy-load-xt
- * (C) 2016 RESS.io
- * Licensed under MIT */
-.lazy-hidden {
-    opacity: 0;
-}
-.lazy-loaded {
-    -webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
-    -ms-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    opacity: 1;
-}
-
-img.lazy {
-  display: none;
-}
