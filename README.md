@@ -6,9 +6,18 @@ Minify / compile / consolidate assets with the Makefile.
 
 ## Remarks
 
-Lazy Load XT: use the data-src attribute and don't forget the
+* Lazy Load XT: use the data-src attribute and don't forget the
 <noscript> trick to always display images in browsers without
 javascript.
+* jqtmath implements a very small subset of LaTeX. In particular
+greek letters have to be input in unicode (e.g. α instead of \alpha).
+
+
+## To do
+
+* Fix vertical labels on browsers not supporting CSS rotations
+* Reduce the size of biggest SVGs
+
 
 ## Credits
 * Original site template: HTML5 UP, html5up.net | @n33co | CCA 3.0 license
