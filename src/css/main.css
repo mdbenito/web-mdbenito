@@ -1,6 +1,9 @@
 /*! Based on Read Only by HTML5 UP, html5up.net | @n33co, CCA 3.0 license. */
-/* Disable import for minification */
-/* @import url("font-awesome.min.css"); */
+/* Disable import for minification
+  @import url("font-awesome.min.css");
+Actualy, we use
+  @import url("fa-mini.min.css")
+*/
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /* Reset */
@@ -1804,7 +1807,7 @@ textarea:focus {
 .select-wrapper:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: fa-mini;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -1812,7 +1815,7 @@ textarea:focus {
 
 .select-wrapper:before {
   color: #e4e4e4;
-  content: '\f078';
+  content: '\e80c';  /* Open arrow down (chevron down) */
   display: block;
   height: 2.75em;
   line-height: 2.75em;
@@ -1870,7 +1873,7 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: fa-mini;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -1897,7 +1900,7 @@ input[type="radio"]:checked + label:before {
   background: #989898;
   border-color: #989898;
   color: #ffffff;
-  content: '\f00c';
+  content: '\e80d'; /* Check mark */
 }
 
 input[type="checkbox"]:focus + label:before,
@@ -1964,7 +1967,8 @@ input[type="radio"] + label:before {
   padding: 0;
 }
 
-/* Icon */
+/* Icon
+ * Old stuff from HTML5up. Not needed now that I'm using fontello
 
 .icon {
   text-decoration: none;
@@ -1975,7 +1979,7 @@ input[type="radio"] + label:before {
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: fa-mini;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -1984,6 +1988,8 @@ input[type="radio"] + label:before {
 .icon > .label {
   display: none;
 }
+*/
+
 
 /* Image */
 
@@ -2091,7 +2097,7 @@ ul.feature-icons li {
 ul.feature-icons li:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: fa-mini;
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -2850,7 +2856,7 @@ article > .icons, .container > .icons {
   #titleBar .toggle:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
+    font-family: fa-mini;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -2859,7 +2865,7 @@ article > .icons, .container > .icons {
   #titleBar .toggle:before {
     background: #243756;
     color: #ffffff;
-    content: '\f0c9';
+    content: '\e80b';  /* Menu icon */
     display: block;
     font-size: 18px;
     height: 44px;
@@ -3090,7 +3096,7 @@ article > .icons, .container > .icons {
     margin: 0 !important;
   }
 
-  ul.actions li > *.icon:before {
+  ul.actions li > *[class^="icon-"]:before {
     margin-left: -2em;
   }
 

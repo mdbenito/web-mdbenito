@@ -24,7 +24,7 @@ JS_OUT=$(JS_DEST_DIR)/everything.min.js
 
 # CSS config
 CSS_SRC_DIR=src/css
-CSS_SRC=font-awesome.css main.css tipsy.css jqmath-0.4.3.css jquery.lazyloadxt.fadein.css
+CSS_SRC=fa-mini.css main.css tipsy.css jqmath-0.4.3.css jquery.lazyloadxt.fadein.css
 CSS_DEST_DIR=public/assets/css
 CSS_OUT=$(CSS_DEST_DIR)/everything.min.css
 
