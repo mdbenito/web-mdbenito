@@ -2134,10 +2134,11 @@ ul.icons li:last-child {
   padding-right: 0 !important;
 }
 
+/* 1.25 is too big if there are more than 4 or 5 icons
 ul.icons li .icon:before {
   font-size: 1.25em;
 }
-
+*/
 ul.actions {
   cursor: default;
   list-style: none;
