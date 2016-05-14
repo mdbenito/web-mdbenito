@@ -35,6 +35,7 @@ $(CSS_OUT): $(CSS_MIN)
 
 $(CSS_MIN): %.css.min: %.css
 	$(CSSNANO) $< $@
+	@echo >> $@
 
 $(JS_OUT): $(JS_IN)
 	@echo "Compiling Javascript..."
