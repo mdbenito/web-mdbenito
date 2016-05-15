@@ -1563,18 +1563,18 @@ body, input, select, textarea {
 }
 
 a {
-  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border-bottom: solid 1px #e4e4e4;
-  color: inherit;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
+  border-bottom: solid 1px #e4e4e4;
+  color: #819199;
 }
 
 a:hover {
   border-bottom-color: transparent;
-  color: #243756 !important;
+  color: #555;
 }
 
 strong, b {
