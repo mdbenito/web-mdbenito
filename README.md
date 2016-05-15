@@ -11,7 +11,7 @@ Minify / compile / consolidate assets with the Makefile.
 javascript.
 * jqtmath implements a very small subset of LaTeX. In particular
 greek letters have to be input in unicode (e.g. α instead of \alpha).
-* The webfont is a stripped down version of Font Awesome. Done with
+* The webfont is a stripped down version of Font Awesome done with
   http://fontello.com. The config is in `src/fonts/fontello-config.json`.
   **NOTE** that the generated CSS uses the relative path of the package,
   i.e. ../font/blah, whereas I'm using ../font*s*/blah.
