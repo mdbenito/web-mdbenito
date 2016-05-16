@@ -3136,8 +3136,10 @@ article > .icons, .container > .icons {
 }
 
 .vertical-label {
-  transform: rotate(-90deg);
-  transform-origin: left top 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
   float:left;
   position:absolute;
   left:-3em;
