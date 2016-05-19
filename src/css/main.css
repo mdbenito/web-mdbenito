@@ -2647,6 +2647,26 @@ article > .icons, .container > .icons {
   color: inherit;
 }
 
+/**** More stufff *****/
+
+.caps {
+    font-variant: small-caps;
+}
+
+.vertical-label {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+  float:left;
+  position:absolute;
+  left:-3em;
+  top:65%;
+  font-size:large;
+  color:#DDD;
+}
+
+
 /* XLarge */
 
 @media screen and (max-width: 1680px) {
@@ -3122,29 +3142,11 @@ article > .icons, .container > .icons {
     /* Other */
   .vertical-label {
     top: 68%;
-    left:-1.5em;
+    left:-1.4em;
     font-size:medium;
   }
 
 }
 
 
-/**** More stufff *****/
-
-.caps {
-    font-variant: small-caps;
-}
-
-.vertical-label {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transform-origin: left top 0;
-          transform-origin: left top 0;
-  float:left;
-  position:absolute;
-  left:-3em;
-  top:65%;
-  font-size:large;
-  color:#DDD;
-}
 
