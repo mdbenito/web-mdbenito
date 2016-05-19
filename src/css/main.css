@@ -2666,6 +2666,9 @@ article > .icons, .container > .icons {
   color:#DDD;
 }
 
+ul.simple-list li {
+  margin: 1em 0;
+}
 
 /* XLarge */
 
