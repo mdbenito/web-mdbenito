@@ -1569,12 +1569,12 @@ a {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   border-bottom: solid 1px #e4e4e4;
-  color: #819199;
+  color: #718199;
 }
 
 a:hover {
   border-bottom-color: transparent;
-  color: #555;
+  color: #243756;
 }
 
 strong, b {
