@@ -6,6 +6,7 @@ HTMLMIN=/usr/local/bin/htmlmin
 CSSNANO=/usr/local/bin/cssnano
 CLOSURE_COMPILER=/Users/miguel/Applications/closure-compiler/compiler.jar
 TMP=/tmp
+JAVA="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 
 # HTML config
 HTML_SRC_DIR=src
@@ -56,7 +57,7 @@ $(CSS_MIN): %.css.min: %.css
 $(JS_OUT): $(JS_IN)
 	$(info Compiling $^)
 	@# NOTE: things break with --compilation_level ADVANCED
-	@java -jar $(CLOSURE_COMPILER) --js $^ --js_output_file $(TMP)/$(notdir $@)
+	@$(JAVA) -jar $(CLOSURE_COMPILER) --js $^ --js_output_file $(TMP)/$(notdir $@)
 	@cat $(JS_PRE) $(TMP)/$(notdir $@) > $@
 
 $(JS_IN):;
