@@ -1577,6 +1577,12 @@ a:hover {
   color: #243756;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.2;
+}
+
 strong, b {
   color: #777;
   font-weight: 700;
