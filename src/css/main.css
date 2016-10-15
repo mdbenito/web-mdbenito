@@ -1,7 +1,5 @@
 /*! Based on Read Only by HTML5 UP, html5up.net | @n33co, CCA 3.0 license. */
 /* Disable import for minification
-  @import url("font-awesome.min.css");
-Actualy, we use
   @import url("fa-mini.min.css")
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
@@ -2891,7 +2889,7 @@ ul.simple-list li {
   #titleBar .toggle:before {
     background: #243756;
     color: #ffffff;
-    content: '\e80b';  /* Menu icon */
+    content: '\f0c9';  /* Menu icon */
     display: block;
     font-size: 18px;
     height: 44px;

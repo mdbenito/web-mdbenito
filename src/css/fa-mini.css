@@ -1,17 +1,27 @@
 /*! Fontello generated webfont, based on FontAwesome */
-/* MDB: Careful! There are edits AFTER creating the webfont
-  After generating a new webfont, copy here the new @font-face
-  and the new icons. In particular keep the styles.
-*/
 
+/* MDB: Careful! There are edits AFTER creating the webfont
+ * 
+  After generating a new webfont, change the url arguments in
+  the @font-face and add the new icon codes.
+  
+  In particular:
+   - keep the modifications to the styles.
+   - Modify the 'content' of '#titleBar .toggle:before' in main.css
+     to use whatever the new code is for icon-menu.
+
+  The arguments in the URLs are random: they force cache reloading for clients
+  after every update of the font.
+
+ */
 @font-face {
   font-family: 'fa-mini';
-  src: url('../fonts/fa-mini.eot?61206095');
-  src: url('../fonts/fa-mini.eot?61206095#iefix') format('embedded-opentype'),
-       url('../fonts/fa-mini.woff2?61206095') format('woff2'),
-       url('../fonts/fa-mini.woff?61206095') format('woff'),
-       url('../fonts/fa-mini.ttf?61206095') format('truetype'),
-       url('../fonts/fa-mini.svg?61206095#fa-mini') format('svg');
+  src: url('../fonts/fa-mini.eot?59364542');
+  src: url('../fonts/fa-mini.eot?59364542#iefix') format('embedded-opentype'),
+       url('../fonts/fa-mini.woff2?59364542') format('woff2'),
+       url('../fonts/fa-mini.woff?59364542') format('woff'),
+       url('../fonts/fa-mini.ttf?59364542') format('truetype'),
+       url('../fonts/fa-mini.svg?59364542#fa-mini') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +31,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fa-mini';
-    src: url('../font/fa-mini.svg?61206095#fa-mini') format('svg');
+    src: url('../fonts/fa-mini.svg?59364542#fa-mini') format('svg');
   }
 }
 */
@@ -82,6 +92,7 @@ a[class^="icon-"] {
 .icon-bank:before { content: '\e808'; } /* '' */
 .icon-users:before { content: '\e809'; } /* '' */
 .icon-file-pdf:before { content: '\e80a'; } /* '' */
-.icon-menu:before { content: '\e80b'; } /* '' */
-.icon-down-open:before { content: '\e80c'; } /* '' */
+.icon-chart-bar:before { content: '\e80b'; } /* '' */
 .icon-ok:before { content: '\e80d'; } /* '' */
+.icon-link-ext:before { content: '\f08e'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
