@@ -32,7 +32,6 @@ All can be installed with [npm](https://www.npmjs.com/) using e.g.
   i.e. ../font/blah, whereas I'm using ../font*s*/blah.
   **Don't** blindly overwrite `fa-mini.css`. Instead copy the new icons
   and fix the paths as indicated in `src/css/fa-mini.css`
-  Also: `fa-mini-ie7.css` has to be minified by hand
 
 ## To do
 
