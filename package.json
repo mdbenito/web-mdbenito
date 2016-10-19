@@ -8,7 +8,7 @@
     "router": [
       {
         "module": "basic-auth",
-        "path": "/",
+        "path": "/files/math/",
         "options": {
           "username": "$BASIC_AUTH_USERNAME",
           "password": "$BASIC_AUTH_PASSWORD"
