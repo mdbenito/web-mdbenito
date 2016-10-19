@@ -41,6 +41,7 @@ All can be installed with [npm](https://www.npmjs.com/) using e.g.
   local changes (see above).
 
 ## Credits
+
 * Original site template: HTML5 UP, html5up.net | @n33co |
   [CCA 3.0 license](html5up.net/license)
 * Demo images by [Unsplash](unsplash.com)
@@ -57,3 +58,10 @@ All can be installed with [npm](https://www.npmjs.com/) using e.g.
     * skel.js v3.0.0 | (c) n33 | skel.io | MIT license
     * Lazy Load XT 1.1.0. | MIT license
     * jqmath 0.4.3. | (c) 2015, Mathscribe, Inc. | MIT license
+
+## License
+
+This site and its contents are licensed under 
+[CC BY](https://creativecommons.org/licenses/by/4.0/) unless otherwise
+specified or previously licensed.
+
