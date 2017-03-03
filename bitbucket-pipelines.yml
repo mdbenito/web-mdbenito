@@ -5,6 +5,6 @@ pipelines:
     master:
       - step:
           script:
-          - echo "To do: run make here"
-          - npm install -g aerobatic-cli
-          - aero deploy
+          - "echo \"To do: run make here\""
+          - "npm install -g aerobatic-cli"
+          - "aero deploy"
