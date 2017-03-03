@@ -48,6 +48,7 @@ all: $(CSS_OUT) $(CSS_MIN_IE) $(JS_OUT) $(HTML_OUT)
 
 $(CSS_OUT): $(CSS_MIN)
 	$(info Joining minified CSS)
+	@mkdir -p $(CSS_DEST_DIR)
 	@cat $^ > $@
 
 $(CSS_MIN): %.css.min: %.css
@@ -65,6 +66,7 @@ $(CSS_MIN_IE): %.min.css: %.css
 # FIXME: I should compile files separately then join them...
 $(JS_OUT): $(JS_IN)
 	$(info Compiling $^)
+	@mkdir -p $(JS_DEST_DIR)
 	@# NOTE: things break with --compilation_level ADVANCED
 	@$(CLOSURE_COMPILER) $^ > $(TMP)/$(notdir $@)
 	@cat $(JS_PRE) $(TMP)/$(notdir $@) > $@
@@ -76,5 +78,6 @@ $(HTML_OUT): $(HTML_IN)
 	@$(HTMLMIN) $< -o $@
 
 clean:
-	rm $(CSS_MIN)
-
+	rm $(CSS_MIN) $(CSS_MIN_IE)
+	rm $(CSS_OUT)
+	rm $(JS_OUT)
