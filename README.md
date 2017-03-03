@@ -4,6 +4,8 @@ Just my site / portfolio / dump.
 
 Minify / compile / consolidate assets with the Makefile.
 
+Deploy in aerobatic with `aero deploy`.
+
 ## Build dependencies
 
 Beyond the javascript listed in the credits, which is bundled,
@@ -35,6 +37,9 @@ All can be installed with [npm](https://www.npmjs.com/) using e.g.
 
 ## To do
 
+* Run `make` in the Bitbucket pipeline. This will need installing the
+  required packages in `bitbucket-pipelines.yml` and removing the ugly
+  hardcoded paths in the `Makefile`.
 * Reduce the size of the biggest SVGs: cmusml.svg (too many points in
   top-right subplot).
 * Automate font generation with fontello API. Careful with overwriting
