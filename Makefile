@@ -2,11 +2,10 @@
 # Install htmlmin with npm install -g html-minifier-cli
 # Install cssnano with npm install -g cssnano-cli
 # Copy the jar of the closure compiler to some folder
-HTMLMIN=/usr/local/bin/htmlmin
-CSSNANO=/usr/local/bin/cssnano
-CLOSURE_COMPILER=/Users/miguel/Applications/closure-compiler/compiler.jar
+HTMLMIN=htmlmin
+CSSNANO=cssnano
+CLOSURE_COMPILER=google-closure-compiler-js
 TMP=/tmp
-JAVA="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 
 #### HTML config
 HTML_SRC_DIR=src
@@ -67,7 +66,7 @@ $(CSS_MIN_IE): %.min.css: %.css
 $(JS_OUT): $(JS_IN)
 	$(info Compiling $^)
 	@# NOTE: things break with --compilation_level ADVANCED
-	@$(JAVA) -jar $(CLOSURE_COMPILER) --js $^ --js_output_file $(TMP)/$(notdir $@)
+	@$(CLOSURE_COMPILER) $^ > $(TMP)/$(notdir $@)
 	@cat $(JS_PRE) $(TMP)/$(notdir $@) > $@
 
 $(JS_IN):;
