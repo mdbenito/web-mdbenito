@@ -2,11 +2,7 @@
 
 Just my site / portfolio / dump.
 
-Minify / compile / consolidate assets with the Makefile.
-
-Deploy in aerobatic with `aero deploy`.
-
-## Build dependencies
+## Dependencies
 
 Beyond the javascript listed in the credits, which is bundled,
 I'm using the following for deployment:
@@ -14,9 +10,20 @@ I'm using the following for deployment:
 * cssnano
 * closure compiler
 * htmlminifier
+* aerobatic-cli
 
 All can be installed with [npm](https://www.npmjs.com/) using e.g.
 `sudo npm install -g <packagename>`.
+
+
+## Deployment
+
+Minify / compile / consolidate assets with the Makefile.
+
+Continuous deployment to [aerobatic](https://aerobatic.io) is set up
+with bitbucket pipelines. If this is not working, use `aero deploy`
+after setting the environment variable `AEROBATIC_API_KEY` (run `aero
+apikey`).
 
 
 ## Remarks
