@@ -44,9 +44,7 @@ apikey`).
 
 ## To do
 
-* Run `make` in the Bitbucket pipeline. This will need installing the
-  required packages in `bitbucket-pipelines.yml` and removing the ugly
-  hardcoded paths in the `Makefile`.
+* Use a staging branch.
 * Reduce the size of the biggest SVGs: cmusml.svg (too many points in
   top-right subplot).
 * Automate font generation with fontello API. Careful with overwriting
