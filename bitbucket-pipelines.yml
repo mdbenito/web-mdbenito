@@ -2,8 +2,8 @@ image: node:4.6.0  # To do: use a lighter image if available / necessary
 pipelines:
   branches:
     master:
-      - step:
+      step:
         script:
-          # To do: run make here
-          - npm install -g aerobatic-cli   # Install the aero CLI
-          - aero deploy 
+        # To do: run make here
+        - npm install -g aerobatic-cli   # Install the aero CLI
+        - aero deploy 
