@@ -33,7 +33,7 @@ up with Bitbucket pipelines. If this is not working, then:
 
 * `public/files` contains things which are **not** in `src`, like
   pdfs, images, etc.
-  
+
 * Lazy Load XT: use the `data-src` attribute and don't forget the
   `noscript` trick to always display images in browsers without
   javascript.
@@ -78,7 +78,7 @@ up with Bitbucket pipelines. If this is not working, then:
 
 ## License
 
-This site and its contents are licensed under 
-[CC BY](https://creativecommons.org/licenses/by/4.0/) unless otherwise
-specified or previously licensed.
+This site and its contents are licensed
+under [CC BY](https://creativecommons.org/licenses/by/4.0/) unless
+otherwise specified or previously licensed.
 
