@@ -205,8 +205,8 @@
                 <div class="inner">
                   <h4>Bayesian model selection</h4>
 
-                  <p>In this note we introduce <b>linear regression with basis functions</b> in
-                    order to apply <b>Bayesian model selection</b>. The goal is to incorporate
+                  <p>In this note we introduce <strong>linear regression with basis functions</strong> in
+                    order to apply <strong>Bayesian model selection</strong>. The goal is to incorporate
                     Occam's razor through Bayesian analysis in order to automatically pick
                     the model optimally able to explain the data without overfitting. This
                     is joint fun with <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.</p>
@@ -227,13 +227,13 @@
                 <div class="inner">
                   <h4>Monte Carlo Tree Search</h4>
 
-                  <p><b>MCTS</b> is a moderately recent (2006) algorithm for playing games by
+                  <p><strong>MCTS</strong> is a moderately recent (2006) algorithm for playing games by
                     partially building their decision trees. The key is to use random simulations of
                     the game for those choices which seem most fruitful according to a criterion
                     balancing <em>exploration</em> of new venues and <em>exploitation</em> of good
                     ones. An implementation in Python for a simple game
-                    of <b><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum
-                    TicTacToe</a></b> provides a nice testbed. This is joint fun with
+                    of <strong><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum
+                    TicTacToe</a></strong> provides a nice testbed. This is joint fun with
                     <a href="#people" class="people-link" data-people="#ana">Ana Ca&ntilde;izares</a>,
                     based on work by
                     <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.</p>
@@ -281,8 +281,8 @@
                     squares of the distances of each data point to the center of mass of its
                     assigned cluster is minimal. We review how this minimization can be performed
                     iteratively in a manner closely linked to
-                    <a class="-link" href="#em">Expectation Maximization</a> for <b>Gaussian
-                    mixtures</b>. We also briefly discuss <b>K-Means++</b>.</p>
+                    <a class="-link" href="#em">Expectation Maximization</a> for <strong>Gaussian
+                    mixtures</strong>. We also briefly discuss <strong>K-Means++</strong>.</p>
                 </div>
                 <ul class="icons">
                   <li><a class="icon-bitbucket" href="https://bitbucket.org/mdbenito/km2em" title="Code" rel="tipsy"></a></li>
@@ -298,11 +298,11 @@
                 <div class="inner">
                   <h4>Expectation maximization</h4>
 
-                  <p><b>EM</b> is a generic iterative algorithm for the maximization of the log
+                  <p><strong>EM</strong> is a generic iterative algorithm for the maximization of the log
                     likelihood. Following (very closely) Bishop's classical book we discuss its
-                    general form, applied to <b>Gaussian models</b> with latent variables as
+                    general form, applied to <strong>Gaussian models</strong> with latent variables as
                     motivation. Some limitations are discussed. Finally we also say a few words
-                    about the <b>Kullback-Leibler</b> divergence and other information theoretic
+                    about the <strong>Kullback-Leibler</strong> divergence and other information theoretic
                     ideas to show why EM works.</p>
                 </div>
                 <ul class="icons">
@@ -319,12 +319,12 @@
                   <h4>Support Vector Machines</h4>
 
                   <p>Starting with some elementary ideas on how to tackle the task of assigning
-                    labels to images, we progress onto the classical <b>Perceptron</b>, then
-                    introduce <b>Optimal Margin Classifiers</b> and finally the primal version of
-                    the <b>SVM</b>. From there we do a short detour through <b>dual Lagrange</b>
+                    labels to images, we progress onto the classical <strong>Perceptron</strong>, then
+                    introduce <strong>Optimal Margin Classifiers</strong> and finally the primal version of
+                    the <strong>SVM</strong>. From there we do a short detour through <strong>dual Lagrange</strong>
                     methods and introduce the standard dual formulation of the SVM and the
-                    construction of higher dimensional feature spaces with the <b>kernel
-                    trick</b>. Along the way we discuss optimisation methods which enable us to use
+                    construction of higher dimensional feature spaces with the <strong>kernel
+                    trick</strong>. Along the way we discuss optimisation methods which enable us to use
                     SVMs on large data sets. We provide an implementation written in C++11, using
                     <a href="http://arma.sourceforge.net/">Armadillo</a>
                     and <a href="https://www.qt.io/">Qt</a>.</p>
@@ -344,7 +344,7 @@
                 <div class="inner">
                   <h4>Data assimilation</h4>
 
-                  <p><b>DA</b> is the task of incorporating data into models given by stochastic
+                  <p><strong>DA</strong> is the task of incorporating data into models given by stochastic
                     dynamical systems. In the simpler discrete case, one considers stochastic
                     dynamics given by $v_{j + 1} = Ψ (v_j) + ξ_j,$ with i.i.d additive noise,
                     together with a sequence of observations given by $y_{j + 1} = h(v_{j + 1}) +
@@ -370,8 +370,8 @@
 
                   <p>A (pure, vectorized) Python implementation of an <strong>HMM</strong> with
                     discrete emissions given either by probability tables or Poisson distributions.
-                    Parameter estimation is done using the <b>Baum-Welch</b> algorithm for HMMs,
-                    which actually is <b>Expectation Maximization</b>. In this application we
+                    Parameter estimation is done using the <strong>Baum-Welch</strong> algorithm for HMMs,
+                    which actually is <strong>Expectation Maximization</strong>. In this application we
                     experience how badly EM tends to get stuck in local optima. This code was
                     written during a short stay at the chair of Computational Neuroscience in
                     the <a href="http://www.neuro.bio.lmu.de/">department of Neurobiology</a> of the
@@ -397,7 +397,7 @@
                     is easy to sample. After explaining the algorithm we provide basic theoretical
                     justification for it. In a simple Python implementation we also test
                     <a href="https://github.com/HIPS/autograd">autograd</a>, a package for
-                    <b><a href="https://en.wikipedia.org/wiki/Automatic_differentiation">Automatic Differentiation</a></b>.
+                    <strong><a href="https://en.wikipedia.org/wiki/Automatic_differentiation">Automatic Differentiation</a></strong>.
                     Work with <a href="#people" class="people-link" data-people="#alvaro">&Aacute;lvaro Tejero</a>.</p>
                 </div>
                 <ul class="icons">
@@ -415,13 +415,13 @@
                 <div class="inner">
                   <h4>SML @ CMU</h4>
 
-                  <p>Python + <b>C</b>ython implementation of some algorithms from Larry Wasserman's
+                  <p>Python + <strong>C</strong>ython implementation of some algorithms from Larry Wasserman's
                     course <a href="http://www.stat.cmu.edu/~larry/=sml/">"Statistical Machine
                     Learning"</a> at Carnegie Mellon University. For now, I only have nonparametric
-                    regression, with <b>Nadaraya-Watson</b>, <b>Local Polynomial Regression</b>
-                    and <b>Generalized</b> or <b>Leave-One-Out cross-validation</b> applied to
+                    regression, with <strong>Nadaraya-Watson</strong>, <strong>Local Polynomial Regression</strong>
+                    and <strong>Generalized</strong> or <strong>Leave-One-Out cross-validation</strong> applied to
                     select the bandwidth. For the multidimensional case I implemented
-                    standard <b>Backfitting</b> for <b>Additive Models</b> and <b>SpAM</b> (Sparse
+                    standard <strong>Backfitting</strong> for <strong>Additive Models</strong> and <strong>SpAM</strong> (Sparse
                     Additive Models) for the high dimensional case.</p>
                 </div>
                 <ul class="icons">
