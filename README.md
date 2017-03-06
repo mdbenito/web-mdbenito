@@ -4,48 +4,55 @@ Just my site / portfolio / dump.
 
 ## Dependencies
 
-Beyond the javascript listed in the credits, which is bundled,
-I'm using the following for deployment:
+Beyond the javascript listed in the credits, which is bundled, I'm
+using the following [npm](https://www.npmjs.com/) packages for
+deployment:
 
-* cssnano
-* closure compiler
-* htmlminifier
-* aerobatic-cli
+ * [cssnano-cli](https://www.npmjs.com/package/cssnano-cli)
+ * [html-minifier-cli](https://www.npmjs.com/package/html-minifier)
+ * [google-closure-compiler-js](https://www.npmjs.com/package/google-closure-compiler-js)
+ * [aerobatic-cli](https://www.npmjs.com/package/aerobatic-cli)
 
-All can be installed with [npm](https://www.npmjs.com/) using e.g.
-`sudo npm install -g <packagename>`.
+Everything can be installed with e.g.  `sudo npm install -g
+<packagename>`.
 
 
 ## Deployment
 
-Minify / compile / consolidate assets with the Makefile.
+Continuous deployment to [aerobatic](https://www.aerobatic.com) is set
+up with Bitbucket pipelines. If this is not working, then:
 
-Continuous deployment to [aerobatic](https://aerobatic.io) is set up
-with bitbucket pipelines. If this is not working, use `aero deploy`
-after setting the environment variable `AEROBATIC_API_KEY` (run `aero
-apikey`).
+1. Minify / compile / consolidate assets with `make`. This should
+   populate the directory `public` with the relevant files.
+2. Set the environment variable `AEROBATIC_API_KEY` (run `aero apikey`
+   to get it).
+3. Run `aero deploy`.
 
 
 ## Remarks
 
-* Lazy Load XT: use the data-src attribute and don't forget the
-  noscript trick to always display images in browsers without
+* `public/files` contains things which are **not** in `src`, like
+  pdfs, images, etc.
+  
+* Lazy Load XT: use the `data-src` attribute and don't forget the
+  `noscript` trick to always display images in browsers without
   javascript.
 
 * jqmath implements a very small subset of LaTeX. In particular
   greek letters have to be input in unicode (e.g. α instead of \alpha).
 
-* The webfont is a stripped down version of Font Awesome done with
-  http://fontello.com. The config is in `src/fonts/fontello-config.json`.
-  **NOTE** that the generated CSS uses the relative path of the package,
-  i.e. ../font/blah, whereas I'm using ../font*s*/blah.
-  **Don't** blindly overwrite `fa-mini.css`. Instead copy the new icons
-  and fix the paths as indicated in `src/css/fa-mini.css`
+* The webfont is a stripped down version of Font Awesome done
+  with [fontello](http://fontello.com). The config is in
+  `src/fonts/fontello-config.json`.  **NOTE** that the generated CSS
+  uses the relative path of the package, i.e. `../font/blah`, whereas
+  I'm using `../font*s*/blah`.  **Don't** blindly overwrite
+  `fa-mini.css`. Instead copy the new icons and fix the paths as
+  indicated in `src/css/fa-mini.css`
 
 ## To do
 
 * Use a staging branch.
-* Reduce the size of the biggest SVGs: cmusml.svg (too many points in
+* Reduce the size of the biggest SVGs, e.g. `cmusml.svg` (too many points in
   top-right subplot).
 * Automate font generation with fontello API. Careful with overwriting
   local changes (see above).
