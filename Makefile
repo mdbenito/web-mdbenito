@@ -5,6 +5,7 @@
 HTMLMIN=htmlmin
 CSSNANO=cssnano
 CLOSURE_COMPILER=google-closure-compiler-js
+RM=rm -f
 TMP=/tmp
 
 #### HTML config
@@ -37,13 +38,13 @@ CSS_MIN=$(addsuffix .min,$(CSS_IN))
 
 # CSS files for IE are not joined into CSS_OUT.
 # Instead they are loaded separately from index.html if needed.
-CSS_IN_IE=$(addprefix $(strip $(CSS_SRC_DIR))/,$(CSS_SRC_IE))
-CSS_MIN_IE=$(addsuffix .min.css,$(basename $(CSS_IN_IE)))
+CSS_MIN_IE=$(addsuffix .min.css,$(basename $(CSS_SRC_IE)))
+CSS_OUT_IE=$(addprefix $(strip $(CSS_DEST_DIR))/,$(CSS_MIN_IE))
 
 #### Rules:
 .PHONY: all clean
 
-all: $(CSS_OUT) $(CSS_MIN_IE) $(JS_OUT) $(HTML_OUT)
+all: $(CSS_OUT) $(CSS_OUT_IE) $(JS_OUT) $(HTML_OUT)
 	$(info Done)
 
 $(CSS_OUT): $(CSS_MIN)
@@ -57,11 +58,10 @@ $(CSS_MIN): %.css.min: %.css
 	@# Add a newline at the end for nicer concatenation
 	@echo >> $@
 
-# FIXME: HACK: should use some CSS_OUT_IE 
-$(CSS_MIN_IE): %.min.css: %.css
-	$(info Minifying and copying $(notdir $<) (FIXME))
-	@$(CSSNANO) $< $@
-	@mv $@ $(addprefix $(strip $(CSS_DEST_DIR))/,$(notdir $@))
+# This target is $(CSS_OUT_IE):
+$(CSS_DEST_DIR)/%.min.css: $(CSS_SRC_DIR)/%.css
+	$(info Minifying $(notdir $<))
+	$(CSSNANO) $< $@
 
 # FIXME: I should compile files separately then join them...
 $(JS_OUT): $(JS_IN)
@@ -78,6 +78,8 @@ $(HTML_OUT): $(HTML_IN)
 	@$(HTMLMIN) $< -o $@
 
 clean:
-	rm $(CSS_MIN) $(CSS_MIN_IE)
-	rm $(CSS_OUT)
-	rm $(JS_OUT)
+	$(RM) $(CSS_MIN) 
+	$(RM) $(CSS_OUT)
+	$(RM) $(JS_OUT)
+	$(RM) $(HTML_OUT)
+	$(RM) $(CSS_OUT_IE)
