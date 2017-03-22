@@ -61,7 +61,7 @@ $(CSS_MIN): %.css.min: %.css
 # This target is $(CSS_OUT_IE):
 $(CSS_DEST_DIR)/%.min.css: $(CSS_SRC_DIR)/%.css
 	$(info Minifying $(notdir $<))
-	$(CSSNANO) $< $@
+	@$(CSSNANO) $< $@
 
 # FIXME: I should compile files separately then join them...
 $(JS_OUT): $(JS_IN)
