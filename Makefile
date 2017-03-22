@@ -18,7 +18,7 @@ HTML_IN=$(addprefix $(strip $(HTML_SRC_DIR))/,$(HTML_SRC))
 #### JS config
 JS_SRC_DIR=src/js
 JS_PRECOMPILED=jquery.min.js jquery.scrolly.min.js jquery.scrollzer.min.js jqmath-etc-0.4.3.min.js
-JS_SRC=jquery.tipsy.js jquery.lazyloadxt.js skel.js util.js main.js
+JS_SRC=jquery.tipsy.js jquery.lazyloadxt.js skel.js util.js zmain.js
 # TODO: Enable jquery.lazyloadxt.autoload.js *with* fadein
 
 JS_DEST_DIR=public/assets/js
