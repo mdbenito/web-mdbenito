@@ -1,9 +1,9 @@
 id: 200997d5-88c7-475e-b251-0b4ea7bbd3c8
 deploy:
   directory: public
-plugins:
-  - name: basic-auth
-    path: /
-    options:
-      username: $BASIC_AUTH_USERNAME
-      password: $BASIC_AUTH_PASSWORD
+#plugins:
+#  - name: basic-auth
+#    path: /
+#    options:
+#      username: $BASIC_AUTH_USERNAME
+#      password: $BASIC_AUTH_PASSWORD
