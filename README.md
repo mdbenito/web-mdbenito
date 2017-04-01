@@ -2,6 +2,7 @@
 
 Just my site / portfolio / dump.
 
+
 ## Dependencies
 
 Beyond the javascript listed in the credits, which is bundled, I'm
@@ -33,6 +34,14 @@ up with Bitbucket pipelines. If this is not working, then:
 
 * `public/files` contains things which are **not** in `src`, like
   pdfs, images, etc.
+  
+* All bitmaps have been compressed
+  using [guetzli](https://github.com/google/guetzli/) (for jpegs)
+  and [zopflipng](https://github.com/google/zopfli) (for pngs),
+  resulting in file sizes ranging from 80% down to 60% of the previous
+  ones.
+
+* SVGs have been optimized with [svgo](https://github.com/svg/svgo).
 
 * Lazy Load XT: use the `data-src` attribute and don't forget the
   `noscript` trick to always display images in browsers without
@@ -49,6 +58,7 @@ up with Bitbucket pipelines. If this is not working, then:
   `fa-mini.css`. Instead copy the new icons and fix the paths as
   indicated in `src/css/fa-mini.css`
 
+
 ## To do
 
 * Use a staging branch.
@@ -56,6 +66,7 @@ up with Bitbucket pipelines. If this is not working, then:
   top-right subplot).
 * Automate font generation with fontello API. Careful with overwriting
   local changes (see above).
+
 
 ## Credits
 
@@ -75,6 +86,7 @@ up with Bitbucket pipelines. If this is not working, then:
     * skel.js v3.0.0 | (c) n33 | skel.io | MIT license
     * Lazy Load XT 1.1.0. | MIT license
     * jqmath 0.4.3. | (c) 2015, Mathscribe, Inc. | MIT license
+
 
 ## License
 
