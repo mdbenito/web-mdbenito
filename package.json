@@ -1,0 +1,20 @@
+{
+  "name": "mdbenito",
+  "version": "0.2.7",
+  "description": "Just another home page",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": ""
+  },
+  "license": "CC BY 4.0",
+  "scripts": {
+    "install-deps": "npm i cssnano-cli html-minifier-cli google-closure-compiler",
+    "build": "npm run install-deps && make"
+  },
+  "dependencies": {
+    "cssnano-cli": "^1.0.5",
+    "google-closure-compiler": "^20200112.0.0",
+    "html-minifier-cli": "^0.1.0"
+  }
+}

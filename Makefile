@@ -2,9 +2,9 @@
 # Install htmlmin with npm install -g html-minifier-cli
 # Install cssnano with npm install -g cssnano-cli
 # Copy the jar of the closure compiler to some folder
-HTMLMIN=htmlmin
-CSSNANO=cssnano
-CLOSURE_COMPILER=google-closure-compiler-js
+HTMLMIN=npx htmlmin
+CSSNANO=npx cssnano
+CLOSURE_COMPILER=npx google-closure-compiler
 RM=rm -f
 TMP=/tmp
 

@@ -3,9 +3,9 @@ pipelines:
   branches:
     master:
       - step:
-          name: Deploy to mdbenito.aerobaticapp.com
+          name: Deploy to ZEIT
           deployment: production
           # trigger: manual  # Uncomment to make this a manual deployment.
           script:
             - "make"
-            - "aero deploy"
+            - "now deploy"
