@@ -11,24 +11,14 @@ deployment:
 
  * [cssnano-cli](https://www.npmjs.com/package/cssnano-cli)
  * [html-minifier-cli](https://www.npmjs.com/package/html-minifier)
- * [google-closure-compiler-js](https://www.npmjs.com/package/google-closure-compiler-js)
- * [aerobatic-cli](https://www.npmjs.com/package/aerobatic-cli)
+ * [google-closure-compiler](https://www.npmjs.com/package/google-closure-compiler)
 
-Everything can be installed with e.g.  `sudo npm install -g
-<packagename>`.
+`npm run build` installs the dependencies and builds the site. This
+minifies / compiles / consolidates assets with `make` and populates
+the directory `public` with the relevant files.
 
-
-## Deployment
-
-Continuous deployment to [aerobatic](https://www.aerobatic.com) is set
-up with Bitbucket pipelines. If this is not working, then:
-
-1. Minify / compile / consolidate assets with `make`. This should
-   populate the directory `public` with the relevant files.
-2. Set the environment variable `AEROBATIC_API_KEY` (run `aero apikey`
-   to get it).
-3. Run `aero deploy`.
-
+Continuous deployment to [netlify](https://www.netlify.com) is set up
+in netlify's admin panel.
 
 ## Remarks
 
