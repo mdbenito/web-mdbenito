@@ -3,7 +3,8 @@ src/css/jqmath-0.4.3.css.min
 src/css/jquery.lazyloadxt.fadein.css.min
 src/css/main.css.min
 src/css/tipsy.css.min
-node_modules/
 public/index.html
 public/assets/js/
 public/assets/css/
+node_modules/
+package-lock.json
