@@ -289,6 +289,53 @@
             <div class="features">
               <article>
                 <span class="image">
+                  <img class="lazy" data-src="images/ml/cw-calibration.svg">
+                  <noscript><img src="images/ml/cw-calibration.svg"></noscript>
+                  <span class="vertical-label">Dec 2022</span>
+                </span>
+                <div class="inner">
+                  <h4>Class-wise and reduced calibration (ICMLA 2022)</h4>
+                  <p>For many applications of probabilistic classifiers it is important that the
+                      predicted confidence vectors reflect true probabilities (one says that the
+                      classifier is calibrated). It has been shown that common models fail to satisfy
+                      this property, making reliable methods for measuring and improving calibration
+                      important tools. Unfortunately, obtaining these is far from trivial for problems
+                      with many classes. We propose two techniques that can be used in tandem. First,
+                      a reduced calibration method transforms the original problem into a simpler
+                      one. We prove for several notions of calibration that solving the reduced
+                      problem minimizes the corresponding notion of miscalibration in the full
+                      problem, allowing the use of non-parametric recalibration methods that fail in
+                      higher dimensions. Second, we propose class-wise calibration methods, based on
+                      intuition building on a phenomenon called neural collapse and the observation
+                      that most of the accurate classifiers found in practice can be thought of as a
+                      union of K different functions which can be recalibrated separately, one for
+                      each class. These typically out-perform their non class-wise counterparts,
+                      especially for classifiers trained on imbalanced data sets. Applying the two
+                      methods together results in class-wise reduced calibration algorithms, which are
+                      powerful tools for reducing the prediction and per-class calibration errors. We
+                      demonstrate our methods on real and synthetic datasets and release all code as
+                      open source <a href="https://github.com/appliedAI-Initiative">here</a>.
+                  </p>
+                  <p>This is joint work with my great colleagues
+                      <a href="#people" class="people-link" data-people="#anes">Anes Benmerzoug</a>
+                      and <a href="#people" class="people-link" data-people="#mischa">Michael Panchenko</a>,
+                      appearing at the <a href="https://www.icmla-conference.org/icmla22">21st International
+                      Conference on Machine Learning and Applications</a> (ICMLA 2022).
+                  </p>
+                </div>
+                <ul class="icons">
+                    <li><a class="icon-github" href="https://github.com/appliedAI-Initiative/classwise-calibration-experiments"
+                           title="Code" rel="tipsy"></a></li>
+                    <li><a class="icon-github" href="https://github.com/appliedAI-Initiative/kyle"
+                           title="Code" rel="tipsy"></a></li>
+                    <li><a class="icon-file-pdf" href="http://arxiv.org/abs/2210.03702"
+                           title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon-users people-link" href="#people" data-people="#anes,#mischa"
+                         title="People" rel="tipsy"></a></li>
+                </ul>
+              </article>
+              <article>
+                <span class="image">
                   <img class="lazy" data-src="images/ml/sisyphus.svg">
                   <noscript><img src="images/ml/sisyphus.svg"></noscript>
                   <span class="vertical-label">2017 - 2018</span>
@@ -739,10 +786,12 @@
               that it would be impossible to list them all. These are those directly
               involved in the projects above.</p>
             <ul class="feature-icons">
-              <!-- <li id="luigi"><a href="https://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/bianchi/">Luigi Amedeo Bianchi</a></li> -->
-              <li id="ana"><a href="http://www.mathematik.uni-muenchen.de/~caniz/">Ana Cañizares García</a></li>
-              <li id="ildefonso"><a href="http://www.mat.ucm.es/~jidiaz/">Jesús Ildefonso Díaz Díaz</a></li>
-              <li id="bernd"><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/ana/prof-dr-bernd-schmidt/">Bernd Schmidt</a></li>
+                <!-- <li id="luigi"><a href="https://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/bianchi/">Luigi Amedeo Bianchi</a></li> -->
+                <li id="anes"><a href="https://anesbenmerzoug.github.io/">Anes Benmerzoug</a></li>
+                <li id="ana"><a href="http://www.mathematik.uni-muenchen.de/~caniz/">Ana Cañizares García</a></li>
+                <li id="ildefonso"><a href="http://www.mat.ucm.es/~jidiaz/">Jesús Ildefonso Díaz Díaz</a></li>
+                <li id="mischa"><a href="https://github.com/MischaPanch">Michael Panchenko</a></li>
+                <li id="bernd"><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/ana/prof-dr-bernd-schmidt/">Bernd Schmidt</a></li>
               <li id="alvaro"><a href="https://scholar.google.com/citations?user=VObPwpUAAAAJ&hl=en">Álvaro Tejero Cantero</a></li>
               <li id="philipp"><a href="https://scholar.google.com/citations?user=q2YWR1IAAAAJ&hl=en">Philipp Wacker</a></li>
               <li id="me"><a href="#about">Miguel de Benito Delgado</a></li>
