@@ -51,7 +51,6 @@ in netlify's admin panel.
 
 ## To do
 
-* Use a staging branch.
 * Reduce the size of the biggest SVGs, e.g. `cmusml.svg` (too many points in
   top-right subplot).
 * Automate font generation with fontello API. Careful with overwriting
