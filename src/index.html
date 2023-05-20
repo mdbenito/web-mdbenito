@@ -304,12 +304,14 @@
 		    effort to help practitioners apply new methods appearing in the literature.
 		  </p>
 		  <p>
-		    We investigate the results of Yan and Procaccia's <i>If you like Shapley then
-		    you'll love the core</i> in the field of data valuation. We repeat their
-		    experiments and conclude that the (Monte Carlo) Least Core is sensitive to
-		    important characteristics of the ML problem of interest, making it difficult to
-		    apply, despite superior performance in some settings. For the reproduction we
-		    built upon <a href="#">pyDVL</a>. Code to fully reproduce the experiments
+		    We investigate the results of Yan and
+		    Procaccia's <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16721">If
+		    you like Shapley then you'll love the core</a> in the field of data
+		    valuation. We repeat their experiments and conclude that the (Monte Carlo) Least
+		    Core is sensitive to important characteristics of the ML problem of interest,
+		    making it difficult to apply, despite superior performance in some settings. For
+		    the reproduction we built upon <a href="#pydvl">pyDVL</a>. Code to fully
+		    reproduce the experiments
 		    <a href="https://github.com/aai-institute/mlrc22-like-shapley-love-the-core">can
 		    be found here</a>.
                   </p>
@@ -337,26 +339,22 @@
                 </span>
                 <div class="inner">
                   <h4>Class-wise and reduced calibration (ICMLA 2022)</h4>
-                  <p>For many applications of probabilistic classifiers it is important that the
-                      predicted confidence vectors reflect true probabilities (one says that the
-                      classifier is calibrated). It has been shown that common models fail to satisfy
-                      this property, making reliable methods for measuring and improving calibration
-                      important tools. Unfortunately, obtaining these is far from trivial for problems
-                      with many classes. We propose two techniques that can be used in tandem. First,
-                      a reduced calibration method transforms the original problem into a simpler
-                      one. We prove for several notions of calibration that solving the reduced
-                      problem minimizes the corresponding notion of miscalibration in the full
-                      problem, allowing the use of non-parametric recalibration methods that fail in
-                      higher dimensions. Second, we propose class-wise calibration methods, based on
-                      intuition building on a phenomenon called neural collapse and the observation
-                      that most of the accurate classifiers found in practice can be thought of as a
-                      union of K different functions which can be recalibrated separately, one for
-                      each class. These typically out-perform their non class-wise counterparts,
-                      especially for classifiers trained on imbalanced data sets. Applying the two
-                      methods together results in class-wise reduced calibration algorithms, which are
-                      powerful tools for reducing the prediction and per-class calibration errors. We
-                      demonstrate our methods on real and synthetic datasets and release all code as
-                      open source <a href="https://github.com/appliedAI-Initiative">here</a>.
+                  <p>
+		    Probabilistic classifiers' confidence vectors should ideally mirror true
+		    probabilities, but most common models don't achieve this, making methods to
+		    measure and improve calibration vital. This is not straightforward for
+		    multi-class problems. We suggest two techniques. First, a reduced calibration
+		    method simplifies the original problem, and we prove that solving this reduces
+		    miscalibration in the full problem, allowing the application of non-parametric
+		    recalibration methods that otherwise fail in high dimensions. Secondly, we
+		    present class-wise calibration methods, derived from 'neural collapse' phenomena
+		    and the notion that most accurate classifiers are unions of different functions,
+		    each calibratable separately per class. These generally outperform
+		    non-class-wise methods, especially with imbalanced data sets. Combining the
+		    methods leads to class-wise reduced calibration algorithms, reducing prediction
+		    and per-class calibration errors. We validate our methods on real and synthetic
+		    datasets and provide all code as open
+		    source <a href="https://github.com/appliedAI-Initiative">here</a>.
                   </p>
                   <p>This is joint work with my great colleagues
                       <a href="#people" class="people-link" data-people="#anes">Anes Benmerzoug</a>
@@ -663,7 +661,7 @@
               <p>From the code-monkey dept.</p>
             </header>
             <div class="features">
-	      <article>
+	      <article id="pydvl">
                 <span class="image">
                   <img class="lazy" data-src="images/misc/pydvl.svg">
                   <noscript><img src="images/misc/pydvl.svg"></noscript>
