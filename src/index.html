@@ -280,13 +280,55 @@
               <h3>Statistics and machine learning</h3>
               <p>From the let-the-machine-tell-me dept.</p>
             </header>
-            <p>I devote much of my time to statistical learning theory and machine learning.  I
-              often write toy implementations or documents summarizing ideas or collecting proofs,
-              sometimes by applications to real datasets.  The selection of topics is rather
-              arbitrary, as is the depth with which they are covered, although they are mostly
-              elementary. I usually try to keep some moderate level of rigour, but remain at the
-              level of a practitioner of mild mathematical sophistication.</p>
+            <p>
+	      This is my public work in machine learning. Most of it was done as a hobby in
+	      the past, like toy implementations or simple tutorials, but I also showcase some
+	      recent work while working as a researcher at
+	      <a href="https://transferlab.appliedai.de">appliedAI's TransferLab</a>. The selection
+	      of old topics is rather arbitrary, as is the depth in which they are covered. I
+	      usually tried to keep a moderate level of rigour, but remained at the level of a
+	      practitioner of mild mathematical sophistication.
+	    </p>
             <div class="features">
+	      <article>
+                <span class="image">
+                  <img class="lazy" data-src="images/ml/mlrc22-the-core.svg">
+                  <noscript><img src="images/ml/mlrc22-the-core.svg"></noscript>
+                  <span class="vertical-label">May 2023</span>
+                </span>
+                <div class="inner">
+                  <h4>[Re] If you like Shapley then you'll love the core (MLRC2022)</h4>
+                  <p>
+		    This is the first of many paper reproductions to come out of the
+		    <a href="https://transferlab.appliedai.de">TransferLab</a>, as part of our
+		    effort to help practitioners apply new methods appearing in the literature.
+		  </p>
+		  <p>
+		    We investigate the results of Yan and Procaccia's <i>If you like Shapley then
+		    you'll love the core</i> in the field of data valuation. We repeat their
+		    experiments and conclude that the (Monte Carlo) Least Core is sensitive to
+		    important characteristics of the ML problem of interest, making it difficult to
+		    apply, despite superior performance in some settings. For the reproduction we
+		    built upon <a href="#">pyDVL</a>. Code to fully reproduce the experiments
+		    <a href="https://github.com/aai-institute/mlrc22-like-shapley-love-the-core">can
+		    be found here</a>.
+                  </p>
+                  <p>All experiments were run by my esteemed colleague
+                    <a href="#people" class="people-link" data-people="#anes">Anes Benmerzoug</a>.
+		    The paper will appear in the 2022 edition of the
+		    <a href="https://paperswithcode.com/rc2022">Machine Learning Reproducibility
+		    Challenge</a> (MLRC 2022).
+                  </p>
+                </div>
+                <ul class="icons">
+                    <li><a class="icon-github-circled" href="https://github.com/aai-institute/mlrc22-like-shapley-love-the-core"
+                           title="Code" rel="tipsy"></a></li>
+                    <li><a class="icon-file-pdf" href="https://openreview.net/forum?id=vWzZQAahuW"
+                           title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon-users people-link" href="#people" data-people="#anes"
+                         title="People" rel="tipsy"></a></li>
+                </ul>
+              </article>
               <article>
                 <span class="image">
                   <img class="lazy" data-src="images/ml/cw-calibration.svg">
@@ -621,6 +663,35 @@
               <p>From the code-monkey dept.</p>
             </header>
             <div class="features">
+	      <article>
+                <span class="image">
+                  <img class="lazy" data-src="images/misc/pydvl.svg">
+                  <noscript><img src="images/misc/pydvl.svg"></noscript>
+                  <span class="vertical-label">June 2022</span>
+                </span>
+                <div class="inner">
+                  <h4>pyDVL: The python data valuation library</h4>
+                  <p>
+		    pyDVL strives to offer reference implementations of algorithms for data
+		    valuation with a common interface compatible with sklearn and a benchmarking
+		    suite to compare them. As of version 0.6.1, pyDVL provided robust, parallel
+		    implementations of: Leave One Out, Data Shapley values with different sampling
+		    strategies, Truncated Monte Carlo Shapley, Exact Data Shapley for KNN, Owen
+		    sampling, Group testing Shapley, Least Core, Data Utility Learning, Data Banzhaf
+		    Beta Shapley and the influence function. In addition, we provide analyses of the
+		    strengths and weaknesses of key methods, as well as detailed examples.
+                  </p>
+                  <p>This is joint work with many in the
+		    <a href="https://transferlab.appliedai.de/about">TransferLab team</a>.
+                  </p>
+                </div>
+                <ul class="icons">
+                    <li><a class="icon-github-circled" href="https://github.com/aai-institute/pydvl"
+                           title="Code" rel="tipsy"></a></li>
+                    <li><a class="icon-users people-link" href="https://transferlab.appliedai.de/about"
+			   title="Team" rel="tipsy"></a></li>
+                </ul>
+              </article>
               <article>
                 <div class="image"><a href="http://www.texmacs.org"><img class="lazy" data-src="images/misc/texmacs.svg" style="padding:0 25% 1em 25%;"><noscript><img src="images/misc/texmacs.svg" style="padding:0 25% 1em 25%;" alt="TeXmacs icon" ></noscript></a>
                   <span class="vertical-label">2011 - 2015</span>
