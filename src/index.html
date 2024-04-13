@@ -288,6 +288,52 @@
 	      practitioner of mild mathematical sophistication.
 	    </p>
             <div class="features">
+
+              <article>
+                <span class="image">
+                  <img class="lazy" data-src="images/ml/re-csshapley.svg">
+                  <noscript><img src="images/ml/re-csshapley.svg"></noscript>
+                  <span class="vertical-label">May 2024</span>
+                </span>
+                <div class="inner">
+                  <h4>[Re] Classwise-Shapley values for data valuation
+                  </h4>
+                  <p>
+		    This is the second published paper reproduction in data valuation 
+		    <a href="https://transferlab.ai">from my team</a>, as part of our
+		    effort to help practitioners apply new methods appearing in the literature.
+        It's one step closer to our goal of a consistent benchmark of data valuation
+        methods.
+		  </p>
+		  <p>We evaluate CS-Shapley, a data valuation method introduced in Schoch et al. (2022)
+         for classification problems. We repeat the experiments in the paper, including two
+         additional methods, the Least Core (Yan & Procaccia, 2021) and Data Banzhaf (Wang & Jia, 2023), 
+         a comparison not found in the literature. We include more conservative error estimates
+         and additional metrics, like rank stability, and a variance-corrected version of
+         Weighted Accuracy Drop, originally introduced in Schoch et al. (2022).
+         We conclude that while CS-Shapley helps in the scenarios it was originally tested in,
+         in particular for the detection of corrupted labels, it is outperformed by the
+         conceptually simpler Data Banzhaf in the task of detecting highly influential points.
+		     For the reproduction we built upon and extended <a href="#pydvl">pyDVL</a>.
+                  </p>
+                  <p>All
+		    <a href="https://github.com/aai-institute/re-classwise-shapley">experiments</a>
+		    were run by
+                    <a href="#people" class="people-link" data-people="#markus">Markus Semmler</a>.
+		    The paper will appear in 
+		    <a href="https://jmlr.org/tmlr/">Transactions of Machine Learning Research</a> (TMLR 2024).
+                  </p>
+                </div>
+                <ul class="icons">
+                    <li><a class="icon-github-circled" href="https://github.com/aai-institute/re-classwise-shapley"
+                           title="Code" rel="tipsy"></a></li>
+                    <li><a class="icon-file-pdf" href="https://openreview.net/forum?id=srFEYJkqD7"
+                           title="Document" rel="tipsy"></a></li>
+                  <li><a class="icon-users people-link" href="#people" data-people="#markus"
+                         title="People" rel="tipsy"></a></li>
+                </ul>
+              </article>
+
 	      <article>
                 <span class="image">
                   <img class="lazy" data-src="images/ml/mlrc22-the-core.svg">
@@ -297,7 +343,7 @@
                 <div class="inner">
                   <h4>[Re] If you like Shapley then you'll love the core (MLRC2022)</h4>
                   <p>
-		    This is the first of many paper reproductions to come out of the
+		    This was the first of many paper reproductions to come out of the
 		    <a href="https://transferlab.ai">TransferLab</a>, as part of our
 		    effort to help practitioners apply new methods appearing in the literature.
 		  </p>
@@ -314,7 +360,7 @@
 		    <a href="https://github.com/aai-institute/mlrc22-like-shapley-love-the-core">experiments</a>
 		    were run by my esteemed colleague
                     <a href="#people" class="people-link" data-people="#anes">Anes Benmerzoug</a>.
-		    The paper will appear in the 2022 edition of the
+		    The paper appeared in the 2022 edition of the
 		    <a href="https://paperswithcode.com/rc2022">Machine Learning Reproducibility
 		    Challenge</a> (MLRC 2022).
                   </p>
@@ -842,7 +888,7 @@
           </div>
         </section>
         <!-- People -->
-        <section id="people" data-people="#luigi,#anes,#ana,#ildefonso,#mischa,#bernd,#alvaro,#philipp">
+        <section id="people" data-people="#luigi,#anes,#ana,#ildefonso,#mischa,#markus,#bernd,#alvaro,#philipp">
           <div class="container">
             <header>
               <h2>People</h2>
@@ -854,8 +900,9 @@
             <ul class="feature-icons">
                 <!-- <li id="luigi"><a href="https://www.math.uni-augsburg.de/prof/ana/arbeitsgruppe/bianchi/">Luigi Amedeo Bianchi</a></li> -->
                 <li id="anes"><a href="https://anesbenmerzoug.github.io/">Anes Benmerzoug</a></li>
-                <li id="ana"><a href="http://www.mathematik.uni-muenchen.de/~caniz/">Ana Cañizares García</a></li>
+                <li id="ana"><a href="https://www.mathematik.uni-muenchen.de/~caniz/">Ana Cañizares García</a></li>
                 <li id="ildefonso"><a href="http://www.mat.ucm.es/~jidiaz/">Jesús Ildefonso Díaz Díaz</a></li>
+                <li id="markus"><a href="https://github.com/kosmitive">Markus Semmler</a></li>
                 <li id="mischa"><a href="https://github.com/MischaPanch">Michael Panchenko</a></li>
                 <li id="bernd"><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/ana/prof-dr-bernd-schmidt/">Bernd Schmidt</a></li>
               <li id="alvaro"><a href="https://scholar.google.com/citations?user=VObPwpUAAAAJ&hl=en">Álvaro Tejero Cantero</a></li>
