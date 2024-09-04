@@ -1937,6 +1937,22 @@ header.major h2+p {
   margin-top: -0.75em;
 }
 
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center
+}
+
+.above-medium-bp {
+  display: block;
+}
+
+.below-medium-bp {
+  display: none;
+}
+
 /* Form */
 
 form {
@@ -2173,17 +2189,15 @@ input[type="radio"]+label:before {
 .image {
   border-radius: 5px;
   border: 0;
-  display: inline-block;
-  position: relative;
 }
 
 .image img {
   border-radius: 5px;
-  display: block;
 }
 
 
 .image.avatar {
+  display: inline-block;
   border-radius: 100%;
   overflow: hidden;
   width: 8em;
@@ -2192,6 +2206,12 @@ input[type="radio"]+label:before {
 .image.avatar img {
   border-radius: 100%;
   display: block;
+}
+
+.image.right {
+  float: right;
+  margin: 0 0 2em 2.5em;
+  padding-top: 0.5em;
 }
 
 /* List */
@@ -2617,14 +2637,15 @@ input[type="button"]:disabled,
 }
 
 .features article .image {
-  display: inline-block;
   padding-right: 2.5em;
-  vertical-align: middle;
   width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .features article .image img {
-  display: block;
   width: 100%;
 }
 
@@ -2827,16 +2848,16 @@ article>.icons,
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   -webkit-transform-origin: left top 0;
-  transform-origin: left top 0;
-  float: left;
-  position: absolute;
-  left: -3em;
-  top: 65%;
+  transform-origin: center;
+  max-width: 2rem;
   font-size: large;
-  color: #DDD;
+  color: #CCC;
+  text-wrap: nowrap;
+  padding-bottom: 1em;
 }
 
 ul.simple-list li {
+
   margin: 1em 0;
 }
 
@@ -2890,7 +2911,7 @@ ul.simple-list li {
   input,
   select,
   textarea {
-    font-size: 11pt;
+    font-size: 12pt;
   }
 
   /* Header */
@@ -2923,13 +2944,6 @@ ul.simple-list li {
   html,
   body {
     overflow-x: hidden;
-  }
-
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 12pt;
   }
 
   /* Header */
@@ -3092,13 +3106,6 @@ ul.simple-list li {
 
   /* Basic */
 
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 12pt;
-  }
-
   h1 br,
   h2 br,
   h3 br,
@@ -3126,22 +3133,22 @@ ul.simple-list li {
     justify-content: center;
   }
 
-  .features article .image {
-    width: fit-content;
-  }
-
   .above-medium-bp {
-    display: none;
+    display: none !important;
   }
 
   .below-medium-bp {
-    display: block;
+    display: block !important;
   }
 
-  .features article .image img {
-    width: auto;
-    height: auto;
+  .features article {
+    margin-bottom: 0 !important;
+  }
 
+  .features article .image {
+    width: 100%;
+    padding: 0 0 2em 0;
+    flex-direction: column;
   }
 
   .features article .inner {
@@ -3163,6 +3170,13 @@ ul.simple-list li {
     font-size: 1.5em;
   }
 
+  .above-medium-bp {
+    display: none;
+  }
+
+  .below-medium-bp {
+    display: block;
+  }
 
   /* Header */
 
@@ -3300,7 +3314,8 @@ ul.simple-list li {
 
   /* Other */
   .vertical-label {
-    left: -2em;
+    transform: none;
+    max-width: none;
   }
 }
 
@@ -3370,11 +3385,18 @@ ul.simple-list li {
     padding: 0;
   }
 
+  article .image {
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* Other */
   .vertical-label {
-    top: 68%;
-    left: -1.4em;
     font-size: medium;
+  }
+
+  .features article .image {
+    padding-bottom: 1em;
   }
 
 }
