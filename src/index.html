@@ -283,6 +283,40 @@
                     rel="tipsy"></a></li>
               </ul>
             </article>
+            <article id="pydvl">
+              <span class="image">
+                <div class="vertical-label">June 2022 - Today</div>
+                <img class="lazy" data-src="images/misc/pydvl.svg">
+                <noscript><img src="images/misc/pydvl.svg"></noscript>
+              </span>
+              <div class="inner">
+                <h4>pyDVL: The python data valuation library</h4>
+                <p>
+                  pyDVL strives to offer reference implementations of algorithms for data
+                  valuation with a common interface compatible with sklearn and a benchmarking
+                  suite to compare them. As of version 0.10.0, pyDVL provides robust, parallel
+                  implementations of <a href="https://pydvl.org/stable/getting-started/methods/">
+                  20+ algorithms in data valuation and influence function computation.</a> In
+                  addition, we include analyses of the strengths and weaknesses of key methods,
+                  as well as detailed examples.
+                </p>
+                <p>PyDVL started as a project of the <a href="https://transferlab.ai/about">
+                  TransferLab team</a>, but intends to grow into a community effort. We welcome
+                  contributions from anyone interested in data valuation and are <a 
+                  href="https://github.com/aai-institute/pyDVL/discussions/"> happy to help
+                  you</a> get started. Please check out our <a
+                  href="https://pydvl.org/stable/CONTRIBUTING/"> contributing guide</a> for more
+                  information.
+                </p>
+              </div>
+              <ul class="icons">
+                <li><a class="icon-github-circled" href="https://github.com/aai-institute/pydvl" title="Code"
+                    rel="tipsy"></a></li>
+                <li><a class="icon-users people-link"
+                  href="https://github.com/aai-institute/pyDVL/graphs/contributors" title="Team" rel="tipsy"></a>
+                </li>
+              </ul>
+            </article>
             <article>
               <span class="image">
                 <div class="vertical-label">2017 - 2018</div>
@@ -313,7 +347,7 @@
                 <noscript><img src="images/ml/bml.png"></noscript>
               </span>
               <div class="inner">
-                <h4>Bayesian model selection</h4>
+                <h4>Bayesian model selection for linear regression</h4>
 
                 <p>In this note we introduce <strong>linear regression with basis
                     functions</strong> in order to apply <strong>Bayesian model
@@ -333,6 +367,8 @@
                     rel="tipsy"></a></li>
               </ul>
             </article>
+
+            
             <article>
               <span class="image">
                 <div class="vertical-label">Feb 2016</div>
@@ -340,15 +376,15 @@
                 <noscript><img src="images/ml/mcts.png"></noscript>
               </span>
               <div class="inner">
-                <h4>Monte Carlo Tree Search</h4>
+                <h4>Playing Q-TTT with Monte Carlo Tree Search</h4>
 
-                <p><strong>MCTS</strong> is a moderately recent (2006) algorithm for playing games
+                <p><strong>MCTS</strong> is a classic algorithm for playing games
                   by partially building their decision trees. The key is to use random simulations
                   of the game for those choices which seem most fruitful according to a criterion
                   balancing <em>exploration</em> of new venues and <em>exploitation</em> of good
                   ones. An implementation in Python for a simple game
                   of <strong><a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">Quantum
-                      TicTacToe</a></strong> provides a nice testbed. This is joint fun with
+                  TicTacToe</a></strong> provides a nice testbed. This is joint fun with
                   <a href="#people" class="people-link" data-people="#ana">Ana Cañizares</a>,
                   based on work by
                   <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.
@@ -362,136 +398,7 @@
                     rel="tipsy"></a></li>
               </ul>
             </article>
-            <article>
-              <span class="image">
-                <div class="vertical-label">Apr 2015</div>
-                <img class="lazy" data-src="images/ml/knn.png">
-                <noscript><img src="images/ml/knn.png" alt="Results window"></noscript>
-              </span>
-              <div class="inner">
-                <h4>K - nearest neighbours</h4>
-
-                <p><strong>KNN</strong> is one of the simplest non-parametric classification
-                  algorithms. In this note, we start from basic ideas in <strong>kernel density
-                    estimation</strong> and using Bayes' rule we derive this simple (albeit slow and
-                  sloppy) algorithm which "only" requires the computation and sorting of distances
-                  in $L^p$. We test its performance on
-                  the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10</a> dataset
-                  with a C++11 implementation
-                  using <a href="http://arma.sourceforge.net/">Armadillo</a> and a viewer written
-                  with <a href="https://www.qt.io/">Qt</a> for the results.</p>
-              </div>
-              <ul class="icons">
-                <li><a class="icon-bitbucket disabled" href="https://bitbucket.org/mdbenito/knn" title="Code"
-                    rel="tipsy"></a></li>
-                <li><a class="icon-file-pdf disabled"
-                    href="https://bitbucket.org/mdbenito/knn/raw/master/doc/kde-knn.pdf" title="Document"
-                    rel="tipsy"></a></li>
-              </ul>
-            </article>
-            <article>
-              <span class="image">
-                <div class="vertical-label">Oct 2014</div>
-                <img class="lazy" data-src="images/ml/km2em.svg">
-                <noscript><img src="images/ml/km2em.svg"></noscript>
-              </span>
-              <div class="inner">
-                <h4>K-means and Gaussian Mixtures</h4>
-
-                <p><strong>K-means</strong> is a simple clustering algorithm which matches each
-                  data point to exactly one of $K$ clusters in a way such that the sum of the
-                  squares of the distances of each data point to the center of mass of its
-                  assigned cluster is minimal. We review how this minimization can be performed
-                  iteratively in a manner closely linked to
-                  <a class="-link" href="#em">Expectation Maximization</a> for <strong>Gaussian
-                    mixtures</strong>. We also briefly discuss <strong>K-Means++</strong>.
-                </p>
-              </div>
-              <ul class="icons">
-                <li><a class="icon-github-circled" href="https://github.com/mdbenito/km2em" title="Code"
-                    rel="tipsy"></a></li>
-                <li><a class="icon-file-pdf" href="https://github.com/mdbenito/km2em/raw/master/doc/km2em.pdf"
-                    title="Document" rel="tipsy"></a></li>
-              </ul>
-            </article>
-            <article id="em">
-              <span class="image">
-                <div class="vertical-label">Oct 2014</div>
-                <img class="lazy" data-src="images/ml/em.svg">
-                <noscript><img src="images/ml/em.svg"></noscript>
-              </span>
-              <div class="inner">
-                <h4>Expectation maximization</h4>
-
-                <p><strong>EM</strong> is a generic iterative algorithm for the maximization of the log
-                  likelihood. Following (very closely) Bishop's classical book we discuss its
-                  general form, applied to <strong>Gaussian models</strong> with latent variables as
-                  motivation. Some limitations are discussed. Finally we also say a few words
-                  about the <strong>Kullback-Leibler</strong> divergence and other information theoretic
-                  ideas to show why EM works.</p>
-              </div>
-              <ul class="icons">
-                <li><a class="icon-file-pdf" href="https://bitbucket.org/mdbenito/km2em/raw/master/doc/em.pdf"
-                    title="Document" rel="tipsy"></a></li>
-              </ul>
-            </article>
-            <article>
-              <span class="image">
-                <div class="vertical-label">May 2015</div>
-                <img class="lazy" data-src="images/ml/svm.png">
-                <noscript><img src="images/ml/svm.png"></noscript>
-              </span>
-              <div class="inner">
-                <h4>Support Vector Machines</h4>
-
-                <p>Starting with some elementary ideas on how to tackle the task of assigning
-                  labels to images, we progress onto the classical <strong>Perceptron</strong>,
-                  then introduce <strong>Optimal Margin Classifiers</strong> and finally the
-                  primal version of the <strong>SVM</strong>. From there we do a short detour
-                  through <strong>dual Lagrange</strong> methods and introduce the standard dual
-                  formulation of the SVM and the construction of higher dimensional feature spaces
-                  with the <strong>kernel trick</strong>. Along the way we discuss optimisation
-                  methods which enable us to use SVMs on large data sets. We provide an
-                  implementation written in C++11, using
-                  <a href="http://arma.sourceforge.net/">Armadillo</a>
-                  and <a href="https://www.qt.io/">Qt</a>.
-                </p>
-              </div>
-              <ul class="icons">
-                <li><a class="icon-bitbucket disabled" href="https://bitbucket.org/mdbenito/svm" title="Code"
-                    rel="tipsy"></a></li>
-                <li><a class="icon-file-pdf" href="files/ml/svm-primer.pdf" title="Document" rel="tipsy"></a></li>
-                <li><a class="icon-laptop" href="files/ml/svm-slides.pdf" title="Slides" rel="tipsy"></a></li>
-              </ul>
-            </article>
-            <article>
-              <span class="image">
-                <div class="vertical-label">Dec 2015</div>
-                <img class="lazy" data-src="images/ml/data-assimilation.svg">
-                <noscript><img src="images/ml/data-assimilation.svg"></noscript>
-              </span>
-              <div class="inner">
-                <h4>Data assimilation</h4>
-
-                <p><strong>DA</strong> is the task of incorporating data into models given by
-                  stochastic dynamical systems. In the simpler discrete case, one considers
-                  stochastic dynamics given by $v_{j + 1} = Ψ (v_j) + ξ_j,$ with i.i.d additive
-                  noise, together with a sequence of observations given by $y_{j + 1} = h(v_{j +
-                  1}) + η_{j + 1}$, where $η_j$ is again i.i.d. These are Python implementations
-                  of a few algorithms and examples from Law &amp; Stuart's book
-                  <a href="http://www.springer.com/us/book/9783319203249">Data Assimilation</a>,
-                  partly written in collaboration with
-                  <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.
-                </p>
-              </div>
-              <ul class="icons">
-                <li><a class="icon-bitbucket" href="https://bitbucket.org/mdbenito/data-assimilation" title="Code"
-                    rel="tipsy"></a></li>
-                <li><a class="icon-users people-link" href="#people" data-people="#philipp" title="People"
-                    rel="tipsy"></a></li>
-              </ul>
-            </article>
-            <article>
+            <!-- <article>
               <span class="image">
                 <div class="vertical-label">Dec 2015</div>
                 <img class="lazy" data-src="images/ml/hmm.svg" alt="Hidden Markov Models">
@@ -513,8 +420,8 @@
                 <li><a class="icon-github-circled" href="https://github.com/mdbenito/hmm" title="Code" rel="tipsy"></a>
                 </li>
               </ul>
-            </article>
-            <article>
+            </article> -->
+            <!-- <article>
               <span class="image">
                 <div class="vertical-label">Feb 2016</div>
                 <img class="lazy" data-src="images/ml/ars.svg">
@@ -544,8 +451,8 @@
                 <li><a class="icon-users people-link" href="#people" data-people="#alvaro" title="People"
                     rel="tipsy"></a></li>
               </ul>
-            </article>
-            <article>
+            </article> -->
+            <!-- <article>
               <span class="image">
                 <div class="vertical-label">Apr 2016</div>
                 <img class="lazy" data-src="images/ml/cmusml.svg">
@@ -554,22 +461,21 @@
               <div class="inner">
                 <h4>SML @ CMU</h4>
 
-                <p>Python + <strong>C</strong>ython implementation of some algorithms from Larry
-                  Wasserman's course <a href="http://www.stat.cmu.edu/~larry/=sml/">"Statistical
-                    Machine Learning"</a> at Carnegie Mellon University. For now, I only have
-                  nonparametric regression, with <strong>Nadaraya-Watson</strong>, <strong>Local
-                    Polynomial Regression</strong> and <strong>Generalized</strong>
-                  or <strong>Leave-One-Out cross-validation</strong> applied to select the
-                  bandwidth. For the multidimensional case I implemented
-                  standard <strong>Backfitting</strong> for <strong>Additive Models</strong>
-                  and <strong>SpAM</strong> (Sparse Additive Models) for the high dimensional
-                  case.</p>
+                <p>This project collects Python + <strong>C</strong>ython implementations of
+                  several algorithms from Larry Wasserman's course <a
+                  href="http://www.stat.cmu.edu/~larry/=sml/">"Statistical Machine Learning"</a>
+                  at Carnegie Mellon University. This includes nonparametric regression, with 
+                  <strong>Nadaraya-Watson</strong>, <strong>Local Polynomial Regression</strong>
+                  and <strong>Generalized</strong> or <strong>Leave-One-Out cross-validation</strong>
+                  applied to select the bandwidth. For the multidimensional case the implementation
+                  is based on standard <strong>Backfitting</strong> for <strong>Additive Models</strong>
+                  and <strong>SpAM</strong> (Sparse Additive Models) for the high dimensional case.</p>
               </div>
               <ul class="icons">
                 <li><a class="icon-bitbucket disabled" href="https://bitbucket.org/mdbenito/cmusml" title="Code"
                     rel="tipsy"></a></li>
               </ul>
-            </article>
+            </article> -->
           </div>
         </div>
       </section>
@@ -772,41 +678,7 @@
             <h2>Software</h2>
             <p>From the code-monkey dept.</p>
           </header>
-          <div class="features">
-            <article id="pydvl">
-              <span class="image">
-                <div class="vertical-label">June 2022 - Today</div>
-                <img class="lazy" data-src="images/misc/pydvl.svg">
-                <noscript><img src="images/misc/pydvl.svg"></noscript>
-              </span>
-              <div class="inner">
-                <h4>pyDVL: The python data valuation library</h4>
-                <p>
-                  pyDVL strives to offer reference implementations of algorithms for data
-                  valuation with a common interface compatible with sklearn and a benchmarking
-                  suite to compare them. As of version 0.10.0, pyDVL provides robust, parallel
-                  implementations of <a href="https://pydvl.org/stable/getting-started/methods/">
-                  20+ algorithms in data valuation and influence function computation.</a> In
-                  addition, we include analyses of the strengths and weaknesses of key methods,
-                  as well as detailed examples.
-                </p>
-                <p>PyDVL started as a project of the <a href="https://transferlab.ai/about">
-                  TransferLab team</a>, but intends to grow into a community effort. We welcome
-                  contributions from anyone interested in data valuation and are <a 
-                  href="https://github.com/aai-institute/pyDVL/discussions/"> happy to help
-                  you</a> get started. Please check out our <a
-                  href="https://pydvl.org/stable/CONTRIBUTING/"> contributing guide</a> for more
-                  information.
-                </p>
-              </div>
-              <ul class="icons">
-                <li><a class="icon-github-circled" href="https://github.com/aai-institute/pydvl" title="Code"
-                    rel="tipsy"></a></li>
-                <li><a class="icon-users people-link"
-                  href="https://github.com/aai-institute/pyDVL/graphs/contributors" title="Team" rel="tipsy"></a>
-                </li>
-              </ul>
-            </article>
+          <div class="features">          
             <article>
               <div class="image">
                 <div class="vertical-label">2011 - 2015</div>
@@ -940,7 +812,7 @@
           <header>
             <h2>Teaching</h2>
 
-            <p>From the nobody-cares dept.</p>
+            <p>From the non-convex-but-still-learning dept.</p>
           </header>
           <ul class="simple-list">
             <li>2021: Co-supervised M.Sc. thesis "Identifiability of Cyclic Structural Equation Models with Gaussian
@@ -969,7 +841,7 @@
             <li>SS 2015: Tutorübung Gewöhnliche Differentialgleichungen (UNA, <a href="">Dr. Evgeny Volkov</a>).
               <a class="icon-file-pdf" style="float:right;" href="files/teaching/15SS-GDG-Aufgaben.pdf"></a>
             </li>
-            <li>WS 2014: Assistent Analysis 3 (UNA,
+            <li>WS 2014: Tutorübung Analysis 3 (UNA,
               <a class="people-link" href="#people" data-people="#bernd">Prof. Dr. Bernd Schmidt</a>).
               <a class="icon-file-pdf" style="float:right;" href="files/teaching/14WS-A3-Aufgaben.pdf"></a>
             </li>
@@ -986,7 +858,136 @@
               <a class="icon-file-pdf" style="float:right;" href="files/teaching/13SS-HM2-Aufgaben.pdf"></a>
             </li>
           </ul>
-        </div>
+          <hr class="major">
+          <div class="features">
+            <article>
+              <span class="image">
+                <div class="vertical-label">Apr 2015</div>
+                <img class="lazy" data-src="images/ml/knn.png">
+                <noscript><img src="images/ml/knn.png" alt="Results window"></noscript>
+              </span>
+              <div class="inner">
+                <h4>Tutorial on K - nearest neighbours</h4>
+
+                <p><strong>KNN</strong> is one of the simplest non-parametric classification
+                  algorithms. In this note, we start from basic ideas in <strong>kernel density
+                    estimation</strong> and using Bayes' rule we derive this simple (albeit slow and
+                  sloppy) algorithm which "only" requires the computation and sorting of distances
+                  in $L^p$. We test its performance on
+                  the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR10</a> dataset
+                  with a C++11 implementation
+                  using <a href="http://arma.sourceforge.net/">Armadillo</a> and a viewer written
+                  with <a href="https://www.qt.io/">Qt</a> for the results.</p>
+              </div>
+              <ul class="icons">
+                <li><a class="icon-bitbucket disabled" href="https://bitbucket.org/mdbenito/knn" title="Code"
+                    rel="tipsy"></a></li>
+                <li><a class="icon-file-pdf disabled"
+                    href="https://bitbucket.org/mdbenito/knn/raw/master/doc/kde-knn.pdf" title="Document"
+                    rel="tipsy"></a></li>
+              </ul>
+            </article>
+            <article>
+              <span class="image">
+                <div class="vertical-label">Oct 2014</div>
+                <img class="lazy" data-src="images/ml/km2em.svg">
+                <noscript><img src="images/ml/km2em.svg"></noscript>
+              </span>
+              <div class="inner">
+                <h4>A review of K-means and Gaussian Mixtures</h4>
+
+                <p><strong>K-means</strong> is a simple clustering algorithm which matches each
+                  data point to exactly one of $K$ clusters in a way such that the sum of the
+                  squares of the distances of each data point to the center of mass of its
+                  assigned cluster is minimal. We review how this minimization can be performed
+                  iteratively in a manner closely linked to
+                  <a class="-link" href="#em">Expectation Maximization</a> for <strong>Gaussian
+                    mixtures</strong>. We also briefly discuss <strong>K-Means++</strong>.
+                </p>
+              </div>
+              <ul class="icons">
+                <li><a class="icon-github-circled" href="https://github.com/mdbenito/km2em" title="Code"
+                    rel="tipsy"></a></li>
+                <li><a class="icon-file-pdf" href="https://github.com/mdbenito/km2em/raw/master/doc/km2em.pdf"
+                    title="Document" rel="tipsy"></a></li>
+              </ul>
+            </article>
+            <article id="em">
+              <span class="image">
+                <div class="vertical-label">Oct 2014</div>
+                <img class="lazy" data-src="images/ml/em.svg">
+                <noscript><img src="images/ml/em.svg"></noscript>
+              </span>
+              <div class="inner">
+                <h4>A tutorial on Expectation maximization</h4>
+
+                <p><strong>EM</strong> is a generic iterative algorithm for the maximization of the log
+                  likelihood. Following (very closely) Bishop's classical book we discuss its
+                  general form, applied to <strong>Gaussian models</strong> with latent variables as
+                  motivation. Some limitations are discussed. Finally we also say a few words
+                  about the <strong>Kullback-Leibler</strong> divergence and other information theoretic
+                  ideas to show why EM works.</p>
+              </div>
+              <ul class="icons">
+                <li><a class="icon-file-pdf" href="https://github.com/mdbenito/km2em/blob/master/doc/em.pdf"
+                    title="Document" rel="tipsy"></a></li>
+              </ul>
+            </article>
+            <article>
+              <span class="image">
+                <div class="vertical-label">May 2015</div>
+                <img class="lazy" data-src="images/ml/svm.png">
+                <noscript><img src="images/ml/svm.png"></noscript>
+              </span>
+              <div class="inner">
+                <h4>Introduction to Support Vector Machines</h4>
+
+                <p>This short tutorial begins with some basic ideas for tackling the task of assigning labels to images. 
+                  It then progresses to the classical <strong>Perceptron</strong>, introduces <strong>Optimal Margin Classifiers</strong>, 
+                  and finally covers the primal version of the <strong>SVM</strong>. From there, it takes a brief detour 
+                  through <strong>dual Lagrange</strong> methods, presenting the standard dual formulation of the SVM and 
+                  the construction of higher-dimensional feature spaces using the <strong>kernel trick</strong>. Along the way, 
+                  it discusses optimization methods that enable the application of SVMs to large datasets. The tutorial 
+                  includes an implementation written in C++11, utilizing 
+                  <a href="http://arma.sourceforge.net/">Armadillo</a> and <a href="https://www.qt.io/">Qt</a>.
+                </p>
+              </div>
+              <ul class="icons">
+                <li><a class="icon-bitbucket disabled" href="https://bitbucket.org/mdbenito/svm" title="Code"
+                    rel="tipsy"></a></li>
+                <li><a class="icon-file-pdf" href="files/ml/svm-primer.pdf" title="Document" rel="tipsy"></a></li>
+                <li><a class="icon-laptop" href="files/ml/svm-slides.pdf" title="Slides" rel="tipsy"></a></li>
+              </ul>
+            </article>
+            <article>
+              <span class="image">
+                <div class="vertical-label">Dec 2015</div>
+                <img class="lazy" data-src="images/ml/data-assimilation.svg">
+                <noscript><img src="images/ml/data-assimilation.svg"></noscript>
+              </span>
+              <div class="inner">
+                <h4>Data assimilation</h4>
+
+                <p><strong>DA</strong> is the task of incorporating data into models given by
+                  stochastic dynamical systems. In the simpler discrete case, one considers
+                  stochastic dynamics given by $v_{j + 1} = Ψ (v_j) + ξ_j,$ with i.i.d additive
+                  noise, together with a sequence of observations given by $y_{j + 1} = h(v_{j +
+                  1}) + η_{j + 1}$, where $η_j$ is again i.i.d. These are Python implementations
+                  of a few algorithms and examples from Law &amp; Stuart's book
+                  <a href="http://www.springer.com/us/book/9783319203249">Data Assimilation</a>,
+                  partly written in collaboration with
+                  <a href="#people" class="people-link" data-people="#philipp">Philipp Wacker</a>.
+                </p>
+              </div>
+              <ul class="icons">
+                <li><a class="icon-bitbucket" href="https://bitbucket.org/mdbenito/data-assimilation" title="Code"
+                    rel="tipsy"></a></li>
+                <li><a class="icon-users people-link" href="#people" data-people="#philipp" title="People"
+                    rel="tipsy"></a></li>
+              </ul>
+            </article>
+          </div>
+        </div>  
       </section>
       <!-- People -->
       <section id="people" data-people="#luigi,#anes,#ana,#ildefonso,#mischa,#markus,#bernd,#alvaro,#philipp">
